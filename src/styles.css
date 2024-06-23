@@ -1,0 +1,43 @@
+body {
+    font-family: 'bilo', sans-serif !important;
+}
+.text-roxata {
+    color: #0129fa !important;
+}
+.bg-roxata {
+    background-color: #0129fa !important;
+}
+.border-roxata {
+    border-color: #0129fa !important;
+}
+.btn-roxata {
+    color: #fff !important;
+    background-color: #0129fa !important;
+    border-color: #0129fa !important;
+}
+.btn-roxata:hover {
+    color: #fff;
+    background-color: #001fba !important;
+    border-color: #001fb0 !important;
+}
+.btn-roxata:focus, .btn-roxata.focus {
+    color: #fff;
+    background-color: #001fba;
+    border-color: #001fb0;
+    box-shadow: 0 0 0 0.2rem rgba(1, 41, 250, 0.5);
+}
+.btn-roxata:active, .btn-roxata.active, .show > .btn-roxata.dropdown-toggle {
+    color: #fff;
+    background-color: #001fba;
+    border-color: #001fb0;
+}
+.btn-roxata:active:hover, .btn-roxata.active:hover, .show > .btn-roxata.dropdown-toggle:hover {
+    color: #fff;
+    background-color: #001fba;
+    border-color: #001fb0;
+}
+.btn-roxata:disabled, .btn-roxata.disabled {
+    color: #fff;
+    background-color: #0129fa;
+    border-color: #0129fa;
+}
