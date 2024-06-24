@@ -1,43 +1,96 @@
 body {
     font-family: 'bilo', sans-serif !important;
 }
+
 .text-roxata {
     color: #0129fa !important;
 }
+
 .bg-roxata {
     background-color: #0129fa !important;
 }
+
+.bg-roxata-grey {
+    background-color: #e6e7e8;
+}
+
 .border-roxata {
     border-color: #0129fa !important;
 }
+
 .btn-roxata {
     color: #fff !important;
     background-color: #0129fa !important;
     border-color: #0129fa !important;
 }
+
 .btn-roxata:hover {
-    color: #fff;
+    color: #fff !important;
     background-color: #001fba !important;
     border-color: #001fb0 !important;
 }
-.btn-roxata:focus, .btn-roxata.focus {
-    color: #fff;
-    background-color: #001fba;
-    border-color: #001fb0;
-    box-shadow: 0 0 0 0.2rem rgba(1, 41, 250, 0.5);
+
+.btn-roxata:focus,
+.btn-roxata.focus {
+    color: #fff !important;
+    background-color: #001fba !important;
+    border-color: #001fb0 !important;
+    box-shadow: 0 0 0 0.2rem rgba(1, 41, 250, 0.5) !important;
 }
-.btn-roxata:active, .btn-roxata.active, .show > .btn-roxata.dropdown-toggle {
-    color: #fff;
-    background-color: #001fba;
-    border-color: #001fb0;
+
+.btn-roxata:active,
+.btn-roxata.active,
+.show>.btn-roxata.dropdown-toggle {
+    color: #fff !important;
+    background-color: #001fba !important;
+    border-color: #001fb0 !important;
 }
-.btn-roxata:active:hover, .btn-roxata.active:hover, .show > .btn-roxata.dropdown-toggle:hover {
-    color: #fff;
-    background-color: #001fba;
-    border-color: #001fb0;
+
+.btn-roxata:active:hover,
+.btn-roxata.active:hover,
+.show>.btn-roxata.dropdown-toggle:hover {
+    color: #fff !important;
+    background-color: #001fba !important;
+    border-color: #001fb0 !important;
 }
-.btn-roxata:disabled, .btn-roxata.disabled {
-    color: #fff;
-    background-color: #0129fa;
-    border-color: #0129fa;
+
+.btn-roxata:disabled,
+.btn-roxata.disabled {
+    color: #fff !important;
+    background-color: #0129fa !important;
+    border-color: #0129fa !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: white;
+    color: #0129fa !important;
+}
+
+.nav-link {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.font-light {
+    font-weight: 400 !important;
+}
+
+.font-regular {
+    font-weight: 500 !important;
+}
+
+.font-medium {
+    font-weight: 600 !important;
+}
+
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.home-menu {
+    font-size: 75px;
+}
+
+.home-acordeon {
+    font-size: 35px !important;
 }

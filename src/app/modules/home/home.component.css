@@ -1,0 +1,85 @@
+.border-bc,
+.border-tc {
+    border-bottom: 1px solid #0129fa;
+}
+
+.border-rc {
+    border-right: 1px solid #0129fa;
+}
+
+.custom-accordion-button {
+    border-radius: 0 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-accordion-button:not(.collapsed) {
+    background-color: #0129fa !important;
+    color: white !important;
+}
+
+.custom-accordion-button:not(.collapsed)::after {
+    filter: invert(1);
+    /* Change arrow color to white */
+}
+
+.accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0129fa !important;
+    color: white !important;
+}
+
+.custom-accordion-button:not(.collapsed)::after {
+    color: white !important;
+    /* Change arrow color to white */
+}
+
+/* Override Bootstrap default styles */
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-button {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+@media (max-width: 576px) {
+    .border-bxs {
+        border-bottom: 1px solid #0129fa;
+    }
+
+    .border-rc {
+        border-right: none;
+    }
+}
+
+.cardpay {
+    border: 2px solid #0129fa;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.cardpay-left {
+    color: white;
+    background-color: #0129fa !important;
+    border-bottom-left-radius: 21px;
+    border-top-left-radius: 21px;
+}
+
+.contactus-button {
+    background-color: #0129fa;
+    color: white;
+    padding: 0 5px 5px 5px;
+}
+
+.contactus-button:hover {
+    background-color: white;
+    color: #0129fa;
+}
