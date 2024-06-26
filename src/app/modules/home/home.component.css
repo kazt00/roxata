@@ -75,12 +75,43 @@
     color: #0129fa;
 }
 
+.scroll-container {
+    position: relative;
+    max-height: 255px;
+    overflow: hidden;
+    background: white;
+}
+
+.scroll-container::before,
+.scroll-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.scroll-container::before {
+    height: 110px;
+    top: 0;
+    background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0));
+}
+
+.scroll-container::after {
+    height: 110px;
+    bottom: 0;
+    background: linear-gradient(to top, white 10%, rgba(255, 255, 255, 0));
+}
+
 #scroll1 {
     position: relative;
-    max-height: 250px;
+    max-height: 255px;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    z-index: 1;
 }
 
 #scroll1::-webkit-scrollbar {
@@ -95,7 +126,6 @@
     left: 0;
     right: 0;
     height: 50px;
-    /* Ajusta según tus necesidades */
     pointer-events: none;
 }
 
@@ -116,13 +146,27 @@
 }
 
 .ext-content {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
     align-items: center;
 }
 
 .exp-container:hover {
     background: white;
     color: #0129fa;
+}
+
+.contact-cont {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #0129fa;
 }
 
 @media (max-width: 576px) {
@@ -132,5 +176,11 @@
 
     .border-rc {
         border-right: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .ece {
+        border-bottom: none !important;
     }
 }
