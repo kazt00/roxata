@@ -50,16 +50,6 @@
     box-shadow: none !important;
 }
 
-@media (max-width: 576px) {
-    .border-bxs {
-        border-bottom: 1px solid #0129fa;
-    }
-
-    .border-rc {
-        border-right: none;
-    }
-}
-
 .cardpay {
     border: 2px solid #0129fa;
     border-radius: 25px;
@@ -77,9 +67,70 @@
     background-color: #0129fa;
     color: white;
     padding: 0 5px 5px 5px;
+    cursor: pointer;
 }
 
 .contactus-button:hover {
     background-color: white;
     color: #0129fa;
+}
+
+#scroll1 {
+    position: relative;
+    max-height: 250px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#scroll1::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+#scroll1::before,
+#scroll1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+    /* Ajusta según tus necesidades */
+    pointer-events: none;
+}
+
+.scroll-item {
+    margin-bottom: -35px;
+    padding-bottom: -35px;
+}
+
+.exp-container {
+    border-top: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.exp-container-end {
+    border-bottom: 1px solid white;
+}
+
+.ext-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-container:hover {
+    background: white;
+    color: #0129fa;
+}
+
+@media (max-width: 576px) {
+    .border-bxs {
+        border-bottom: 1px solid #0129fa;
+    }
+
+    .border-rc {
+        border-right: none;
+    }
 }
