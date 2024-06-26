@@ -169,6 +169,30 @@
     border-top: 1px solid #0129fa;
 }
 
+.shape-container {
+    position: relative;
+    width: 200px; /* Ajusta según necesites */
+    height: 480px; /* Suma de las alturas de los dos elementos */
+}
+.shape1, .shape2 {
+    position: absolute;
+    right: 0;
+}
+.shape1 { 
+    background-color: black;
+    width: 100px;
+    height: 180px;
+    clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
+    top: 0;
+}
+.shape2 { 
+    background-color: #0129fa;
+    width: 200px;
+    height: 300px;
+    clip-path: polygon(100% 0%, -40% 70%, 0% 100%, 140% 30%);
+    top: 180px; /* Posiciona shape2 justo debajo de shape1 */
+}
+
 @media (max-width: 576px) {
     .border-bxs {
         border-bottom: 1px solid #0129fa;
