@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-roxata">
+<nav class="navbar navbar-expand-md bg-roxata">
   <div class="container d-flex justify-content-between align-items-center">
     <a class="navbar-brand" routerLink="/">
       <img src="assets/roxata.png" alt="Logo" height="30">
     </a>
     <div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()"
+        [attr.aria-expanded]="!isNavbarCollapsed" aria-controls="navbarNav" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div [ngClass]="{'collapse': isNavbarCollapsed, 'navbar-collapse': !isNavbarCollapsed}" class="justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a>
@@ -17,19 +17,19 @@
             <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/about-us" routerLinkActive="active">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/" fragment="services">SERVICES</a>
+            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" (click)="scrollToSection('services')">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/" fragment="trades">TRADES</a>
+            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" (click)="scrollToSection('trades')">TRADES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/" fragment="experience">EXPERIENCE</a>
+            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" (click)="scrollToSection('experience')">EXPERIENCE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/" fragment="contact">CONTACT AND QUOTE</a>
+            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" routerLink="/" fragment="career">CAREER</a>
+            <a class="nav-link text-white font-weight-bold" style="font-size: 0.9rem;" (click)="scrollToSection('career')">CAREER</a>
           </li>
         </ul>
       </div>

@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   
   ngAfterViewInit(): void {
     this.initScroll();
+    this.setPosition();
   }
   ngOnInit(): void {
     
@@ -34,4 +35,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     container.scrollTop = scrollHeight / 1; // Inicializa el scroll en el centro
   }
 
+  setPosition() {
+    const startPoint = document.getElementById('start-point-1');
+    const fixedElement = document.getElementById('fixed-element-1');
+
+    if (startPoint && fixedElement) {
+      const startPointPosition = startPoint.getBoundingClientRect().top + window.scrollY;
+      fixedElement.style.top = `${startPointPosition}px`;
+    }
+  }
 }

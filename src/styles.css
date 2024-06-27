@@ -94,3 +94,21 @@ body {
 .home-acordeon {
     font-size: 35px !important;
 }
+
+.navbar-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0129fa;
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+
+  .content {
+    margin-top: 0; /* Ensure the content starts below the full screen navbar */
+  }
