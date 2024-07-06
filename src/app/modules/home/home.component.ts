@@ -6,17 +6,50 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  
-  @ViewChild('scroll1', { static: true }) scrollContainer: ElementRef | undefined;
-  items = ['Demolition', 'Civil', 'Earthwork','Demolition', 'Civil', 'Earthwork','Demolition', 'Civil', 'Earthwork','Demolition', 'Civil', 'Earthwork','Demolition', 'Civil', 'Earthwork','Demolition', 'Civil', 'Earthwork'];
 
-  
+  @ViewChild('scroll1', { static: true }) scrollContainer: ElementRef | undefined;
+  items = [
+    'Landscaping',
+    'Demolition',
+    'Civil',
+    'Earthwork',
+    'Utilities',
+    'Safety',
+    'Concrete',
+    'Masonry',
+    'Foundations',
+    'Structural steel and miscellaneous metals',
+    'Drywall and ceiling',
+    'Painting and stucco',
+    'Waterproofing',
+    'Thermal and moisture protection',
+    'Roofing',
+    'Mechanical',
+    'Electrical',
+    'Plumbing',
+    'Interior design',
+    'Wood and plastics',
+    'Public works',
+    'Vanity',
+    'Tile and covers',
+    'Windows and doors',
+    'Openings',
+    'Lighting and fixtures',
+    'Structural Wood',
+    'Precast objects',
+    'Pavers',
+    'Conveying equipment',
+    'Integrated automation',
+    'Communications',
+    'Electronic safety']
+
+
   ngAfterViewInit(): void {
     this.initScroll();
     this.setPosition();
   }
   ngOnInit(): void {
-    
+
   }
 
   handleScroll() {
