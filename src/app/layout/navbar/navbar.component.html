@@ -3,35 +3,51 @@
     <div class="forma1" style="position:absolute;z-index:2"></div>
     <div class="container-fluid" style="position:absolute;z-index:3">
       <div class="row h-100">
-        <div class="col-lg-8 col-md-12 d-flex flex-column justify-content-center" style="padding-left: 5%; padding-top: 10%;">
+        <div class="col-lg-8 col-md-12 d-flex flex-column justify-content-center"
+          style="padding-left: 5%; padding-top: 10%;">
           <a class="navbar-brand" routerLink="/" style="width: fit-content;">
             <img src="assets/roxata.png" alt="Logo" height="100">
           </a>
           <ul class="navbar-nav" style="width: fit-content;">
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px; cursor: pointer;" routerLink="/" (click)="scrollToTop()">HOME</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                routerLink="/" (click)="hideNavbarFull()">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px" routerLink="/about-us" routerLinkActive="active">ABOUT US</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px" routerLink="/about-us"
+                routerLinkActive="active">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('services')">SERVICES</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                (click)="scrollToSection('services')">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('trades')">TRADES</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                (click)="scrollToSection('trades')">TRADES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('experience')">EXPERIENCE</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                (click)="scrollToSection('experience')">EXPERIENCE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white font-weight-bold" style="padding-top: 0; padding-bottom:0; margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('career')">CAREER</a>
+              <a class="nav-link text-white font-weight-bold py-0"
+                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                (click)="scrollToSection('career')">CAREER</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-end" style="position: relative; z-index:1; align-items:end; padding-right: 5%;">
+        <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-end"
+          style="position: relative; z-index:1; align-items:end; padding-right: 5%;">
           <div class="forma2" style="position:absolute;z-index:2"></div>
           <div class="social-buttons mb-3" style="position:absolute;z-index:3">
             <a href="#" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook-f"></i></a>
@@ -42,7 +58,7 @@
       </div>
     </div>
   </div>
-  <div id="navbarMin" class="container-fluid">
+  <div id="navbarMin" class="container-fluid bg-roxata">
     <a class="navbar-brand" routerLink="/" (click)="scrollToTop()">
       <img src="assets/roxata.png" alt="Logo" height="50">
     </a>
