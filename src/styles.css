@@ -6,6 +6,10 @@ body {
     color: #0129fa !important;
 }
 
+.color-roxata{
+    color: #0129fa;
+}
+
 .bg-roxata {
     background-color: #0129fa !important;
 }
@@ -111,4 +115,8 @@ body {
 
   .content {
     margin-top: 0; /* Ensure the content starts below the full screen navbar */
+  }
+
+  .lh-min {
+    line-height: 1;
   }

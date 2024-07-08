@@ -41,14 +41,10 @@ export class NavbarComponent implements OnInit {
       const navbarMin = document.getElementById('navbarMin');
       
       if (section && navbarMin) {
-          const navbarMinHeight = navbarMin.offsetHeight;
-
           // Obtener la posición del elemento objetivo
           const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
-
           // Calcular la posición ajustada
-          const adjustedPosition = sectionPosition - navbarMinHeight;
-
+          const adjustedPosition = sectionPosition - 150;
           // Desplazarse a la posición ajustada
           window.scrollTo({ top: adjustedPosition, behavior: 'smooth' });
       }
