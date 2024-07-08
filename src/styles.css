@@ -2,6 +2,18 @@ body {
     font-family: 'bilo', sans-serif !important;
 }
 
+.border-bc {
+    border-bottom: 1px solid #0129fa;
+}
+
+.border-tc {
+    border-top: 1px solid #0129fa;
+}
+
+.border-rc {
+    border-right: 1px solid #0129fa;
+}
+
 .text-roxata {
     color: #0129fa !important;
 }

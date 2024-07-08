@@ -1,0 +1,49 @@
+.contact-container {
+    height: 400px;
+}
+
+.contact-shape{
+    position: absolute;
+    background-image: url('/assets/asset06.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    right: 0;
+    top: 80px;
+    clip-path: polygon(100% 0, 30% 100%, 100% 100%);
+}
+
+.contact-shape1 {
+    position: absolute;
+    right: 0;
+    background-color: black;
+    width: 100px;
+    height: 180px;
+    clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
+    top: -100px;
+}
+
+.career-shape{
+    position: absolute;
+    background-color: #0129fa;
+    width: 200px;
+    height: 300px;
+    right: 0;
+    top: 65px;
+    clip-path: polygon(100% 0%, -40% 70%, 0% 100%, 140% 30%);
+}
+@media (max-width: 991px) {
+    .career-shape {
+        bottom: 0;
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media (max-width:767px) {
+    .career-shape {
+        bottom: 30px;
+        width: 100px;
+        height: 200px;
+    }
+}
