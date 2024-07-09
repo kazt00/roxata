@@ -1,0 +1,16 @@
+.team-shape {
+    padding-bottom: 50px;
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
+    background-color: #0129fa;
+}
+
+.text-ceo {
+    margin-top: -40%;
+}
+
+.nav-link {
+    padding-right: 5%;
+    padding-left: 5%;
+}

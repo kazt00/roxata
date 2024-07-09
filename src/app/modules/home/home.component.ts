@@ -1,11 +1,12 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements AfterViewInit {
 
   @ViewChild('scroll1', { static: true }) scrollContainer: ElementRef | undefined;
   items = [
@@ -43,13 +44,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
     'Communications',
     'Electronic safety']
 
+  constructor( private navbarRepo: NavbarRepo){
+    this.navbarRepo.activateScrollListener();
+    this.navbarRepo.showNavbarFull();
+  }
 
   ngAfterViewInit(): void {
     this.initScroll();
     this.setPosition();
-  }
-  ngOnInit(): void {
-
   }
 
   handleScroll() {

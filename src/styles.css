@@ -132,3 +132,24 @@ body {
   .lh-min {
     line-height: 1;
   }
+
+  .menu-shape {
+    position: absolute;
+    background-color: #0129fa;
+    width: 150%;
+    height: 1700px;
+    right: 0;
+    top: -300px;
+    clip-path: polygon(0 50%, 100% 0, 100% 50%, 0% 100%);
+}
+
+.menu-nav {
+    position: absolute;
+    top: 250px;
+
+}
+ 
+.menu-nav li {
+    padding-right: 5%;
+    padding-left: 5%;
+}

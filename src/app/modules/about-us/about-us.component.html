@@ -1,5 +1,152 @@
-<div class="container">
-    <div class="mt-5">
-        <h1>Sobre Nosotros</h1>
+<section id="aboutus" class="mb-5" style="margin-top: 10%;">
+    <div class="container">
+        <div class="row w-100">
+            <div class="col-lg-6 col-md-12 position-relative d-flex flex-column ">
+                <div class="menu-shape" style="z-index: 0;"></div>
+                <a class="navbar-brand" routerLink="/" style="width: fit-content;">
+                    <img src="assets/roxata1.png" alt="Logo" height="50">
+                </a>
+                <div class="menu-nav p-3" style="z-index: 1;">
+                    <span class="font-regular home-menu text-white ml-3">About us</span> 
+                    <ul class="navbar-nav" style="width: fit-content;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                        routerLink="/" (click)="goToHome('content')">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px" routerLink="/about-us"
+                        routerLinkActive="active">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('services')">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('trades')">TRADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('experience')">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold py-0"
+                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('career')">CAREER</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="p-3">
+                    <h2 class="text-roxata font-regular">
+                        Who we are?
+                    </h2>
+                    <h5 class="font-light">
+                        We are a team of professionals with the ethical, technical, and communicative skills best suited
+                        to serve the construction industry in any of its stages: predesign and financial feasibility,
+                        design, bidding, construction, operation, maintenance, repair and remodeling.
+                    </h5>
+                    <br>
+                    <h2 class="text-roxata font-regular">
+                        What we do?
+                    </h2>
+                    <h5 class="font-light">
+                        We create and extract optimal information from all stages of the construction process and
+                        provide it to our clients to fulfill their needs.
+                    </h5>
+                    <br>
+                    <h2 class="text-roxata font-regular">
+                        Who we serve?
+                    </h2>
+                    <h5 class="font-light">
+                        We serve any actor involved in the value chain of the construction industry:
+                    </h5>
+                    <div class="row text-roxata py-5 text-center">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc border-rc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">Architectural and Engineering Firms</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc border-rc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">Real Estate developers</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc border-rc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">General contractors</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">Sub-contractors</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc border-rc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">QA / QCs </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc border-rc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">Owners</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc border-rc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">Remodeling contractors</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 py-xs-3 border-tc d-flex align-items-center">
+                                <div class="font-bold lh-min py-3">Government offices</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-roxata font-regular">
+                        How we do it?
+                    </h2>
+                    <h5 class="font-light">
+                        Because of our experience in construction as engineers, general contractors, sub-contractors, and developers, we can
+                        think as our customer would do in order to understand their exact needs. We select and develop the most efficient
+                        digital tools and software to create and extract information with a systematic approach, and present it to our client in
+                        a proper manner.
+                    </h5>
+                    <span class="font-regular home-menu text-roxata">Team</span>
+                    <div class="row">
+                        <div class="col-4 px-0">
+                            <div class="team-shape"></div>
+                            <div class="px-3">
+                                <h5 class="text-roxata text-ceo">Miguel<br>Andrade</h5>
+                                <h5 class="font-light">CEO</h5>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <div class="team-shape"></div>
+                            <div class="px-3">
+                                <h5 class="text-roxata text-ceo">Ricardo<br>Cevallos</h5>
+                                <h5 class="font-light">CEO</h5>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <div class="team-shape"></div>
+                            <div class="px-3">
+                                <h5 class="text-roxata text-ceo">María Laura<br>Andrade</h5>
+                                <h5 class="font-light">CEO</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-roxata-grey py-5 mb-5">
+    <div class="container py-3">
+        <div class="row">
+            <h5 class="text-center">Ethic disclosure</h5>
+        </div>
+        <div class="row">
+            <h3 class="text-roxata font-regular text-center">
+                We refrain from providing services to any <br> 
+                prospective client should we detect that there might <br>
+                be a conflict of interest between two or more of our <br> 
+                clients in the services involved at the moment.
+            </h3>
+        </div>
     </div>
 </div>

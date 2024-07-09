@@ -4,6 +4,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { CommonModule } from "@angular/common";
 import { BacktotopComponent } from './backtotop/backtotop.component';
 import { RouterModule } from "@angular/router";
+import { NavbarRepo } from "./navbar/repositories/navbar.repo";
 
 @NgModule({
     declarations: [
@@ -18,6 +19,9 @@ import { RouterModule } from "@angular/router";
     exports: [
         NavbarComponent,
         FooterComponent
+    ],
+    providers: [
+        NavbarRepo
     ]
 })
 
