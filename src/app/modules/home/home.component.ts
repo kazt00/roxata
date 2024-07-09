@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
 
 @Component({
@@ -42,9 +43,11 @@ export class HomeComponent implements AfterViewInit {
     'Conveying equipment',
     'Integrated automation',
     'Communications',
-    'Electronic safety']
+    'Electronic safety'];
 
-  constructor( private navbarRepo: NavbarRepo){
+  constructor( 
+    private navbarRepo: NavbarRepo,
+    private router: Router){
     this.navbarRepo.activateScrollListener();
     this.navbarRepo.showNavbarFull();
   }
@@ -78,5 +81,9 @@ export class HomeComponent implements AfterViewInit {
       const startPointPosition = startPoint.getBoundingClientRect().top + window.scrollY;
       fixedElement.style.top = `${startPointPosition}px`;
     }
+  }
+
+  goToProducts(product: number) {
+    this.router.navigateByUrl('/products');
   }
 }

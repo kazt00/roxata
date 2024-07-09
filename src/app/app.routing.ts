@@ -2,6 +2,7 @@ import { InitialNavigation, RouterModule, Routes } from "@angular/router";
 import { HomeModule } from "./modules/home/home.module";
 import { AboutModule } from "./modules/about-us/about-us.module";
 import { NgModule } from "@angular/core";
+import { ProductsModule } from "./modules/products/products.module";
 
 const appRouter: Routes = [
     {
@@ -11,6 +12,10 @@ const appRouter: Routes = [
     {
         path: 'about-us',
         loadChildren: () => AboutModule
+    },
+    {
+        path: 'products',
+        loadChildren: () => ProductsModule
     },
     {
         path: '**',
