@@ -9,7 +9,8 @@ import { NavbarRepo } from './repositories/navbar.repo';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  isVisible = false;
+  animationClass = '';
   constructor(
     private router: Router,
     private elementRef: ElementRef,
@@ -49,5 +50,17 @@ export class NavbarComponent implements OnInit {
 
   scrollToTop() {
     this.navbarRepo.scrollToTop();
+  }
+
+  showDiv() {
+    this.animationClass = 'slide-in';
+    this.isVisible = true;
+  }
+
+  hideDiv() {
+    this.animationClass = 'slide-out';
+    setTimeout(() => {
+      this.isVisible = false;
+    }, 500); // Tiempo de duración de la animación
   }
 }
