@@ -1,5 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavbarRepo } from './repositories/navbar.repo';
 
 
@@ -9,12 +8,7 @@ import { NavbarRepo } from './repositories/navbar.repo';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  isVisible = false;
-  animationClass = '';
-  constructor(
-    private router: Router,
-    private elementRef: ElementRef,
-    private navbarRepo: NavbarRepo) {}
+  constructor(private navbarRepo: NavbarRepo) { }
 
   ngOnInit(): void {
     this.checkScrollPosition();
@@ -29,12 +23,12 @@ export class NavbarComponent implements OnInit {
 
   checkScrollPosition() {
     if (window.scrollY === 0) { // Posición más alta de la página
-        this.navbarRepo.showNavbarFull();
+      this.navbarRepo.showNavbarFull();
     } else {
-        this.navbarRepo.hideNavbarFull();
+      this.navbarRepo.hideNavbarFull();
     }
   }
-  
+
   scrollToSection(sectionId: string) {
     this.navbarRepo.scrollToSection(sectionId);
   }

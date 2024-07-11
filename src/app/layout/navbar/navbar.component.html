@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md bg-roxata full-screen-navbar p-0" id="mainNavbar">
-  <div id="navbarFull" class="navbar-full w-100" style="z-index:1">
-    <div class="forma1" style="position:absolute;z-index:2"></div>
-    <div class="container-fluid" style="position:absolute;z-index:3">
+<nav id="mainNavbar" class="navbar navbar-expand-md bg-roxata p-0 fixed-top">
+  <div id="navbarFull" class="navbar-full w-100 position-relative" style="z-index:1">
+    <div class="forma1 position-absolute" style="z-index:2"></div>
+    <div class="container-fluid position-absolute" style="z-index:3">
       <div class="row h-100">
         <div class="col-lg-8 col-md-12 d-flex flex-column justify-content-center"
           style="padding-left: 5%; padding-top: 10%;">
@@ -46,8 +46,8 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-end"
-          style="position: relative; z-index:1; align-items:end; padding-right: 5%;">
+        <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-end position-relative align-items-end"
+          style="z-index:1; padding-right: 5%;">
           <div class="forma2" style="position:absolute;z-index:2"></div>
           <div class="social-buttons mb-3" style="position:absolute;z-index:3">
             <a href="#" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook-f"></i></a>
@@ -58,7 +58,7 @@
       </div>
     </div>
   </div>
-  <div id="navbarMin" class="container-fluid bg-roxata">
+  <div id="navbarMin" class="container-fluid bg-roxata d-none">
     <a class="navbar-brand" routerLink="/" (click)="scrollToTop()" style="margin-left: 5%;">
       <img src="assets/roxata.png" alt="Logo" height="50">
     </a>

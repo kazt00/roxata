@@ -1,6 +1,6 @@
 export class NavbarRepo {
     private scrollListenerActive: boolean = true;
-
+    private firstLoad: boolean = true;
     scrollListener() {
         return this.scrollListenerActive;
     }
@@ -17,12 +17,14 @@ export class NavbarRepo {
         const navbar = document.getElementById('mainNavbar');
         const navbarFull = document.getElementById('navbarFull');
         const navbarMin = document.getElementById('navbarMin');
-        const body = document.body;
-        if (navbar && navbarFull && navbarMin) {
+        if (navbar && navbarMin && navbarFull) {
             navbar.classList.add('shrink');
-            body.classList.add('shrink-padding');
-            navbarMin.classList.remove('d-none');
-            navbarMin.classList.add('fixed-top');
+            navbar.addEventListener('animationend', () => {
+                navbar.classList.remove('shrink');
+                navbarMin.classList.remove('d-none');
+                navbarFull.classList.add('d-none');
+                this.firstLoad = false;
+            }, { once: true });
         }
     }
 
@@ -30,18 +32,9 @@ export class NavbarRepo {
         const navbar = document.getElementById('mainNavbar');
         const navbarFull = document.getElementById('navbarFull');
         const navbarMin = document.getElementById('navbarMin');
-        const body = document.body;
-        if (navbar && navbarMin && navbarFull) {
-            navbar.classList.remove('shrink', 'fixed-top');
-            body.classList.remove('shrink-padding');
-            navbarMin.classList.add('d-none');
+        if (navbar && navbarMin && navbarFull && !this.firstLoad) {
+            navbar.classList.remove('shrink');
             navbarFull.classList.remove('d-none');
-        }
-    }
-
-    hideNavbarMin() {
-        const navbarMin = document.getElementById('navbarMin');
-        if (navbarMin) {
             navbarMin.classList.add('d-none');
         }
     }
@@ -79,5 +72,5 @@ export class NavbarRepo {
               window.scrollTo({ top: adjustedPosition, behavior: 'smooth' });
           }
       }, 300);
-      }
+    }
 }

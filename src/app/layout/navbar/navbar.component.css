@@ -2,50 +2,10 @@
     font-size: 0.9rem;
 }
 
-.full-screen-navbar {
-    height: 100vh;
-    /* Navbar de pantalla completa */
-    transition: height 0.5s, padding 0.5s, background-color 0.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.shrink {
-    height: 56px;
-    /* Altura estándar del navbar */
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-body.shrink-padding {
-    padding-top: 25%;
-    /* Ajuste del padding cuando el navbar se reduce */
-}
-
-.rox-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.rox-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.rox-toggler:focus,
-.rox-toggler:active {
-    border-color: rgba(255, 255, 255, 0.5);
-    /* Color blanco para el borde al hacer clic */
-    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
-    /* Borde blanco */
-}
-
-/* Estilos para navbar-full */
 .navbar-full {
-    background: url('/assets/navbar.jpg') no-repeat center center;
+    background: url('/assets/navbar.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
-    position: relative;
 }
 
 .navbar-full .container-fluid {
@@ -65,25 +25,26 @@ body.shrink-padding {
     font-size: 24px;
 }
 
-@keyframes shrink {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
+.shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    animation: slideOutToTop 1s forwards;
 }
 
-.shrink .container-fluid {
-    display: flex;
+.rox-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
-.shrink #navbarFull {
-    transition: transform 0.15s, opacity 0.5s;
-    animation: shrink 0.15s forwards
+.rox-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.rox-toggler:focus,
+.rox-toggler:active {
+    border-color: rgba(255, 255, 255, 0.5);
+    /* Color blanco para el borde al hacer clic */
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+    /* Borde blanco */
 }
 
 .forma1 {
