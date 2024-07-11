@@ -21,7 +21,6 @@ export class NavbarRepo {
         if (navbar && navbarFull && navbarMin) {
             navbar.classList.add('shrink');
             body.classList.add('shrink-padding');
-            navbarFull.classList.add('d-none');
             navbarMin.classList.remove('d-none');
             navbarMin.classList.add('fixed-top');
         }
@@ -75,7 +74,7 @@ export class NavbarRepo {
               // Obtener la posición del elemento objetivo
               const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
               // Calcular la posición ajustada
-              const adjustedPosition = sectionPosition - 150;
+              const adjustedPosition = sectionPosition - 165;
               // Desplazarse a la posición ajustada
               window.scrollTo({ top: adjustedPosition, behavior: 'smooth' });
           }

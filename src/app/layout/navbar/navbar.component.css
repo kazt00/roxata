@@ -65,12 +65,25 @@ body.shrink-padding {
     font-size: 24px;
 }
 
+@keyframes shrink {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
 .shrink .container-fluid {
     display: flex;
 }
 
 .shrink #navbarFull {
-    display: none;
+    transition: transform 0.15s, opacity 0.5s;
+    animation: shrink 0.15s forwards
 }
 
 .forma1 {

@@ -18,7 +18,7 @@ body {
     color: #0129fa !important;
 }
 
-.color-roxata{
+.color-roxata {
     color: #0129fa;
 }
 
@@ -123,17 +123,18 @@ body {
     background-color: #0129fa;
     z-index: 1000;
     transition: all 0.5s;
-  }
+}
 
-  .content {
-    margin-top: 0; /* Ensure the content starts below the full screen navbar */
-  }
+.content {
+    margin-top: 0;
+    /* Ensure the content starts below the full screen navbar */
+}
 
-  .lh-min {
+.lh-min {
     line-height: 1;
-  }
+}
 
-  .menu-shape {
+.menu-shape {
     position: absolute;
     background-color: #0129fa;
     width: 150%;
@@ -148,7 +149,7 @@ body {
     top: 250px;
 
 }
- 
+
 .menu-nav li {
     padding-right: 5%;
     padding-left: 5%;
@@ -163,7 +164,7 @@ body {
 
 .custom-accordion-button:hover {
     background-color: #0129fa;
-    color: white !important; 
+    color: white !important;
 }
 
 .custom-accordion-button:not(.collapsed) {
@@ -207,45 +208,34 @@ body {
 /* Animación para aparecer desde arriba */
 @keyframes slideInFromTop {
     0% {
-      transform: translateY(-100%);
-      opacity: 0;
+        transform: translateY(-100%);
+        opacity: 0;
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Animación para desaparecer hacia arriba */
-  @keyframes slideOutToTop {
-    0% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-  }
-  
-  /* Clases para aplicar las animaciones */
-  .slide-in {
-    animation: slideInFromTop 0.5s forwards;
-  }
-  
-  .slide-out {
-    animation: slideOutToTop 0.5s forwards;
-  }
 
-  .fullscreen-div {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación para desaparecer hacia arriba */
+@keyframes slideOutToTop {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* Clases para aplicar las animaciones */
+.slide-in {
+    animation: slideInFromTop 0.1s forwards;
+}
+
+.slide-out {
+    animation: slideOutToTop 0.1s forwards;
+}

@@ -51,16 +51,4 @@ export class NavbarComponent implements OnInit {
   scrollToTop() {
     this.navbarRepo.scrollToTop();
   }
-
-  showDiv() {
-    this.animationClass = 'slide-in';
-    this.isVisible = true;
-  }
-
-  hideDiv() {
-    this.animationClass = 'slide-out';
-    setTimeout(() => {
-      this.isVisible = false;
-    }, 500); // Tiempo de duración de la animación
-  }
 }

@@ -11,16 +11,21 @@ export class AboutUsComponent {
   constructor(
     private navbarRepo: NavbarRepo,
     private router: Router) {
+    this.navbarRepo.hideNavbarFull();
     this.navbarRepo.hideMainNavBar();
     this.navbarRepo.deactivateScrollListener();
     this.navbarRepo.scrollToTop();
   }
 
-  goToHome(section: string) {
-    this.router.navigateByUrl('/')
+  goToHome(section?: string) {
+    if (section) {
+      this.router.navigateByUrl('/');
+      setTimeout(() => {
+        this.navbarRepo.scrollToSection(section);
+      }, 300);
+    }
     this.navbarRepo.showMainNavBar();
     this.navbarRepo.activateScrollListener();
-    this.navbarRepo.scrollToSection(section)
   }
   scrollToSection(section: string) {
     this.navbarRepo.scrollToSection(section);
