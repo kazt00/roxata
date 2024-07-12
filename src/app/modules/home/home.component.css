@@ -155,12 +155,13 @@
     width: 150%;
     height: 1200px;
     clip-path: polygon(100% 40%, 100% 100%, 0 60%, 0 0);
-    bottom: 0;
+    bottom: 50px;
+    z-index: -1;
 }
 
 .img-shape2 {
     position: absolute;
-    top: -50px;
+    bottom: 300px;
     background-image: url('/assets/asset05.jpg');
     background-size: cover;
     width: 150%;
@@ -174,7 +175,7 @@
     width: 100px;
     height: 180px;
     clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
-    bottom: 870px;
+    bottom: 960px;
 }
 
 .shape2 {
@@ -182,7 +183,7 @@
     width: 200px;
     height: 300px;
     clip-path: polygon(100% 0%, -40% 70%, 0% 100%, 140% 30%);
-    bottom: 570px;
+    bottom: 660px;
 }
 
 @media (max-width: 991px) {

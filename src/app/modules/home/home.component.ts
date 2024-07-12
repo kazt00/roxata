@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
 
@@ -57,6 +57,11 @@ export class HomeComponent implements AfterViewInit {
     this.setPosition();
   }
 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    this.applyParallaxEffect();
+  }
+
   handleScroll() {
     const container = this.scrollContainer?.nativeElement;
     const scrollHeight = container.scrollHeight / 2;
@@ -85,5 +90,46 @@ export class HomeComponent implements AfterViewInit {
 
   goToProducts(product: number) {
     this.router.navigateByUrl('/products');
+  }
+
+  applyParallaxEffect() {
+    const scrollPosition = window.pageYOffset;
+
+    const imgShape1 = document.querySelector('.img-shape1') as HTMLElement;
+    const imgShape2 = document.querySelector('.img-shape2') as HTMLElement;
+    const shape1 = document.querySelector('.shape1') as HTMLElement;
+    const shape2 = document.querySelector('.shape2') as HTMLElement;
+    const contactshape = document.querySelector('.contact-shape') as HTMLElement;
+    const contactshape1 = document.querySelector('.contact-shape1') as HTMLElement;
+    const careershape = document.querySelector('.career-shape') as HTMLElement;
+
+    // Ajustar las velocidades de desplazamiento (menores a 1 para un desplazamiento más lento)
+    const imgShape1Speed = 0.05;
+    const imgShape2Speed = 0.15;
+    const shape1Speed = 0.3;
+    const shape2Speed = 0.8;
+
+    // Ajustar la posición de los elementos
+    if (imgShape1) {
+      imgShape1.style.transform = `translateY(${scrollPosition * imgShape1Speed}px)`;
+    }
+    if (imgShape2) {
+      imgShape2.style.transform = `translateY(${scrollPosition * imgShape2Speed}px)`;
+    }
+    if (shape1) {
+      shape1.style.transform = `translateY(${scrollPosition * shape1Speed}px)`;
+    }
+    if (shape2) {
+      shape2.style.transform = `translateY(${scrollPosition * shape1Speed}px)`;
+    }
+    if (contactshape) {
+      contactshape.style.transform = `translateY(${scrollPosition * imgShape1Speed}px)`;
+    }
+    if (contactshape1) {
+      contactshape1.style.transform = `translateY(${scrollPosition * imgShape1Speed}px)`;
+    }
+    if (careershape) {
+      careershape.style.transform = `translateY(${scrollPosition * imgShape1Speed}px)`;
+    }
   }
 }
