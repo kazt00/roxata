@@ -6,6 +6,18 @@
     background: url('/assets/navbar.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#navbarFull.show {
+    display: block;
+    animation-name: slideInFromTop;
+}
+
+#navbarFull.hide {
+    display: block;
+    animation-name: slideOutToTop;
 }
 
 .navbar-full .container-fluid {

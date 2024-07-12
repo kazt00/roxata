@@ -1,8 +1,17 @@
 export class NavbarRepo {
+    
     private scrollListenerActive: boolean = true;
     private firstLoad: boolean = true;
     scrollListener() {
         return this.scrollListenerActive;
+    }
+
+    changefirstLoad() {
+        this.firstLoad = false;
+    }
+
+    getFirstLoad() { 
+        return this.firstLoad;
     }
 
     activateScrollListener() {
@@ -23,8 +32,10 @@ export class NavbarRepo {
                 navbar.classList.remove('shrink');
                 navbarMin.classList.remove('d-none');
                 navbarFull.classList.add('d-none');
-                this.firstLoad = false;
             }, { once: true });
+        }
+        if (this.firstLoad) {
+            this.firstLoad = false;
         }
     }
 
@@ -32,10 +43,13 @@ export class NavbarRepo {
         const navbar = document.getElementById('mainNavbar');
         const navbarFull = document.getElementById('navbarFull');
         const navbarMin = document.getElementById('navbarMin');
-        if (navbar && navbarMin && navbarFull && !this.firstLoad) {
-            navbar.classList.remove('shrink');
-            navbarFull.classList.remove('d-none');
-            navbarMin.classList.add('d-none');
+        if (navbar && navbarMin && navbarFull) {
+            navbarFull.classList.add('slide-in');
+                navbar.addEventListener('animationend', () => {
+                    navbar.classList.remove('shrink');
+                    navbarFull.classList.remove('d-none');
+                    navbarMin.classList.add('d-none');
+                })
         }
     }
 

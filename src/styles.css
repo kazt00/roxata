@@ -233,9 +233,9 @@ body {
 
 /* Clases para aplicar las animaciones */
 .slide-in {
-    animation: slideInFromTop 0.1s forwards;
+    animation: slideInFromTop 0.5s forwards;
 }
 
 .slide-out {
-    animation: slideOutToTop 0.1s forwards;
+    animation: slideOutToTop 0.5s forwards;
 }

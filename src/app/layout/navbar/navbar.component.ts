@@ -10,9 +10,7 @@ import { NavbarRepo } from './repositories/navbar.repo';
 export class NavbarComponent implements OnInit {
   constructor(private navbarRepo: NavbarRepo) { }
 
-  ngOnInit(): void {
-    this.checkScrollPosition();
-  }
+  ngOnInit(): void {}
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -22,7 +20,7 @@ export class NavbarComponent implements OnInit {
   }
 
   checkScrollPosition() {
-    if (window.scrollY === 0) { // Posición más alta de la página
+    if (window.scrollY === 0) {
       this.navbarRepo.showNavbarFull();
     } else {
       this.navbarRepo.hideNavbarFull();
