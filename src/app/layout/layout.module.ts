@@ -18,7 +18,8 @@ import { NavbarRepo } from "./navbar/repositories/navbar.repo";
     ],
     exports: [
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        BacktotopComponent
     ],
     providers: [
         NavbarRepo

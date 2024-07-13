@@ -1,7 +1,29 @@
-#backToTopBtn {
-    display: none;
+.back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-}
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.226); 
+    color: #ffffffa1;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    display: none; 
+  }
+  
+  .back-to-top:hover {
+    background-color: #000000; /* Gris opaco */
+    color: white;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+  }
+  

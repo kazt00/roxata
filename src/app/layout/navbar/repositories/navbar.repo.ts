@@ -81,7 +81,7 @@ export class NavbarRepo {
               // Obtener la posición del elemento objetivo
               const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
               // Calcular la posición ajustada
-              const adjustedPosition = sectionPosition - 165;
+              const adjustedPosition = sectionPosition - 50;
               // Desplazarse a la posición ajustada
               window.scrollTo({ top: adjustedPosition, behavior: 'smooth' });
           }
