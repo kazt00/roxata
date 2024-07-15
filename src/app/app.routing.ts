@@ -14,7 +14,7 @@ const appRouter: Routes = [
         loadChildren: () => AboutModule
     },
     {
-        path: 'products',
+        path: 'products/:id',
         loadChildren: () => ProductsModule
     },
     {

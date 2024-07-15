@@ -14,3 +14,13 @@
     padding-right: 5%;
     padding-left: 5%;
 }
+
+.contact-shape {
+    bottom: 145px;
+}
+
+@media (max-width: 992px) {
+    .contact-shape {
+        bottom: 350px;
+    }
+}

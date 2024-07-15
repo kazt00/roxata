@@ -1,305 +1,343 @@
 <section id="aboutus" class="mb-5" style="margin-top: 5%;">
     <div class="container">
         <div class="row w-100">
-            <div class="col-lg-6 col-md-12 position-relative d-flex flex-column ">
+            <div id="menuContainer" class="col-lg-6 col-md-12 position-relative d-flex flex-column ">
                 <div class="menu-shape" style="z-index: 0;"></div>
                 <a class="navbar-brand" routerLink="/" style="width: fit-content;">
                     <img src="assets/roxata1.png" alt="Logo" height="50">
                 </a>
                 <div class="menu-nav p-3" style="z-index: 1;">
-                    <span class="font-regular home-menu text-white ml-3">About us</span> 
+                    <span class="font-regular home-menu text-white ml-3">Products</span>
                     <ul class="navbar-nav" style="width: fit-content;">
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
-                        routerLink="/" (click)="goToHome('content')">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px" routerLink="/about-us"
-                        routerLinkActive="active">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('services')">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('trades')">TRADES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('experience')">EXPERIENCE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold py-0"
-                        style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('career')">CAREER</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" routerLink="/"
+                                (click)="goToHome('content')">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px" routerLink="/about-us"
+                                routerLinkActive="active">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                                (click)="goToHome('services')">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                                (click)="goToHome('trades')">TRADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                                (click)="goToHome('experience')">EXPERIENCE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                                (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0"
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                                (click)="scrollToSection('career')">CAREER</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="p-3">
-                    <span id="drawing" class="font-regular home-menu lh-min">Drawing <br>and Drafting</span>
-                    <div class="accordion my-5" id="servicesAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" style="border-top: 1px solid #0129fa !important;"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                    Drawing
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                    <div id="product-1">
+                        <span id="drawing" class="font-regular home-menu lh-min">Drawing <br>and Drafting</span>
+                        <div class="accordion my-5" id="servicesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                        style="border-top: 1px solid #0129fa !important;" aria-expanded="false"
+                                        aria-controls="collapseOne1">
+                                        Drawing
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            All the ideas and designs from architects, engineers, owners, etc. shall be
+                                            presented in ordered plans in order to be
+                                            communicated to others. We offer the service of drafting any plan using several
+                                            CAD software to achieve the accuracy and
+                                            formality that industry demands.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingtwo">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    Shop drawings and detailing
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="headingtwo" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingtwo">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1"
+                                        aria-expanded="false" aria-controls="collapseTwo1">
+                                        Shop drawings and detailing
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Prior to the execution of any trade, it is necessary to know if the job to be
+                                            done by subcontractors is in accordance with the integral development of the
+                                            project. Shop drawings are submitted by each trade to be approved before
+                                            execution. By using several CAD tools, we elaborate shop drawings with a high
+                                            level of detail.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTree">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree"
-                                    aria-expanded="false" aria-controls="collapseTree">
-                                    Fabrication drawings
-                                </button>
-                            </h2>
-                            <div id="collapseTree" class="accordion-collapse collapse"
-                                aria-labelledby="headingTree" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTree">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree1"
+                                        aria-expanded="false" aria-controls="collapseTree1">
+                                        Fabrication drawings
+                                    </button>
+                                </h2>
+                                <div id="collapseTree1" class="accordion-collapse collapse" aria-labelledby="headingTree"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Several trades involve prefabricated items brought on site for installation. Fabrication drawings are plans that contain
+                                            all the information needed for manufacturers to build those items per the approved shop drawings.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button style="border-top: 1px solid #0129fa !important; border-bottom: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc border-tc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                    As-built plans
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="headingFour" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <span id="drawing" class="font-regular home-menu lh-min">Cost <br>Estimation <br>CLT1</span>
-                    <div class="accordion my-5" id="servicesAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                    Take-offs
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingtwo">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    Bill of materials for vendors
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="headingtwo" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTree">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree"
-                                    aria-expanded="false" aria-controls="collapseTree">
-                                    Unit price analysis
-                                </button>
-                            </h2>
-                            <div id="collapseTree" class="accordion-collapse collapse"
-                                aria-labelledby="headingTree" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                    BIDs management and submission
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="headingFour" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button style="border-top: 1px solid #0129fa !important; border-bottom: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc border-tc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                    aria-expanded="false" aria-controls="collapseFive">
-                                    Scope leveling
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                aria-labelledby="headingFive" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        style="border-top: 1px solid #0129fa !important; border-bottom: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc border-tc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour1"
+                                        aria-expanded="false" aria-controls="collapseFour1">
+                                        As-built plans
+                                    </button>
+                                </h2>
+                                <div id="collapseFour1" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            There is no single construction project that is built as originally intended. We elaborate as-built plans to reflect the
+                                            reality of how the project was really built.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <span id="drawing" class="font-regular home-menu lh-min">Project <br>Management</span>
-                    <div class="accordion my-5" id="servicesAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                    Scheduling services
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                    <div id="product-2">
+                        <span id="drawing" class="font-regular home-menu lh-min">Cost <br>Estimation <br>CLT1</span>
+                        <div class="accordion my-5" id="servicesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2"
+                                        aria-expanded="false" aria-controls="collapseOne2">
+                                        Take-offs
+                                    </button>
+                                </h2>
+                                <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Roxata counts. The core of a proper estimate is knowing the exact quantities the project contains. To do so, we use
+                                            different software depending on the trade involved, to count them as accurately as possible.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingtwo">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
+                                        aria-expanded="false" aria-controls="collapseTwo2">
+                                        Bill of materials for vendors
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            As simple as that. From the take-offs, we generate the bill of materials classified as our clients prefer so they can
+                                            send them to their vendors.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTree">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree2"
+                                        aria-expanded="false" aria-controls="collapseTree2">
+                                        Unit price analysis
+                                    </button>
+                                </h2>
+                                <div id="collapseTree2" class="accordion-collapse collapse" aria-labelledby="headingTree"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            By deeply analyzing the scope, we compute unit costs considering the cost of materials, manpower, tools and machinery,
+                                            and overhead according to local conditions.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2"
+                                        aria-expanded="false" aria-controls="collapseFour2">
+                                        BIDs management and submission
+                                    </button>
+                                </h2>
+                                <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            BIDs management and submission requires a considerable amount of time once the cost estimation is ready. We take care of
+                                            the complete formal process, from the beginning to the end, of digitally submitting the information required by the
+                                            contracting party and doing revisions to proposals submitted.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        style="border-top: 1px solid #0129fa !important; border-bottom: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc border-tc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2"
+                                        aria-expanded="false" aria-controls="collapseFive2">
+                                        Scope leveling
+                                    </button>
+                                </h2>
+                                <div id="collapseFive2" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            In most cases, different suppliers will come up with different considerations for their bids for the same project. It is
+                                            up to us to analyze each bid and to level them to make sure all are bidding on the same scope.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingtwo">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    Project accounting
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="headingtwo" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                    </div>
+                    <div id="product-3">
+                        <span id="drawing" class="font-regular home-menu lh-min">Project <br>Management</span>
+                        <div class="accordion my-5" id="servicesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3"
+                                        aria-expanded="false" aria-controls="collapseOne3">
+                                        Scheduling services
+                                    </button>
+                                </h2>
+                                <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Construction is an orderly process. From a project´s blueprints, we generate a logical construction sequence integrating
+                                            all the activities needed to achieve the final goal on schedule.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTree">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree"
-                                    aria-expanded="false" aria-controls="collapseTree">
-                                    Submittal managements
-                                </button>
-                            </h2>
-                            <div id="collapseTree" class="accordion-collapse collapse"
-                                aria-labelledby="headingTree" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingtwo">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3"
+                                        aria-expanded="false" aria-controls="collapseTwo3">
+                                        Project accounting
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Using the input of our customers, we systematically keep track and classify all the costs of a project so the financial
+                                            status of it is always clear.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button style="border-top: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                    BIM management
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="headingFour" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTree">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree3"
+                                        aria-expanded="false" aria-controls="collapseTree3">
+                                        Submittal managements
+                                    </button>
+                                </h2>
+                                <div id="collapseTree3" class="accordion-collapse collapse" aria-labelledby="headingTree"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            We deal with the technical communications intended to approve methods, materials, and plans by the engineer and/or
+                                            architect.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button style="border-top: 1px solid #0129fa !important; border-bottom: 1px solid #0129fa !important;"
-                                    class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc border-tc"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                    aria-expanded="false" aria-controls="collapseFive">
-                                    Quality dossier
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                aria-labelledby="headingFive" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body px-0">
-                                    <h5 class="font-light">
-                                        TEXTO
-                                    </h5>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button style="border-top: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3"
+                                        aria-expanded="false" aria-controls="collapseFour3">
+                                        BIM management
+                                    </button>
+                                </h2>
+                                <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Today’s world relies on IT and the construction Industry is no exception. We use modeling software tools to create
+                                            virtual models of projects and use the information that arose from them to facilitate the real-life construction
+                                            process.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        style="border-top: 1px solid #0129fa !important; border-bottom: 1px solid #0129fa !important;"
+                                        class="accordion-button custom-accordion-button collapsed font-medium text-roxata home-acordeon border-bc border-tc"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive3"
+                                        aria-expanded="false" aria-controls="collapseFive3">
+                                        Quality dossier
+                                    </button>
+                                </h2>
+                                <div id="collapseFive3" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body px-0">
+                                        <h5 class="font-light">
+                                            Quality is assured by recording all the documentation regarding the correct development of the construction process. We
+                                            take care of that recording and assure no document will be missing when needed.
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -316,11 +354,86 @@
         </div>
         <div class="row">
             <h3 class="text-roxata font-regular text-center">
-                We refrain from providing services to any <br> 
+                We refrain from providing services to any <br>
                 prospective client should we detect that there might <br>
-                be a conflict of interest between two or more of our <br> 
+                be a conflict of interest between two or more of our <br>
                 clients in the services involved at the moment.
             </h3>
         </div>
     </div>
 </div>
+<section id="contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="row h-100">
+                <div class="col-lg-6 col-md-12 position-relative">
+                    <div class="px-4 pt-5">
+                        <span class="font-regular text-roxata home-menu" style="line-height: 1; z-index: 2;">Contact
+                            <br> and
+                            quote
+                            <br> pricing</span>
+                    </div>
+                    <div class="contact-shape"></div>
+                    <div class="contact-shape1"></div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <div class="px-4 w-100 d-flex flex-column justify-content-center">
+                        <div class="border-tc py-2 d-flex flex-row justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <h3 class="text-roxata font-regular">Ricardo Cevallos</h3>
+                                <!-- <h5 class="font-light">Chief Executive Officer</h5> -->
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h5 class="font-light">+593 098 765 4321</h5>
+                                <h5 class="font-light text-roxata">email@roxata.com</h5>
+                            </div>
+                        </div>
+                        <div class="border-tc border-bc py-2 d-flex flex-row justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <h3 class="text-roxata font-regular">Miguel Andrade</h3>
+                                <!-- <h5 class="font-light">Chief Technical Officer</h5> -->
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h5 class="font-light">+593 098 765 4321</h5>
+                                <h5 class="font-light text-roxata">email@roxata.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="career" class="bg-roxata-grey">
+    <div class="container">
+        <div class="py-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 position-relative d-flex align-items-center">
+                    <div class="px-4">
+                        <span class="font-regular text-roxata home-menu">Career</span>
+                    </div>
+                    <div class="career-shape"></div>
+                </div>
+                <div class="col-lg-6 col-md-12 py-4">
+                    <div class="px-4 d-flex flex-column">
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Senior structural steel and miscellaneous metals detailer.</h5>
+                        </div>
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Junior civil project manager.</h5>
+                        </div>
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Senior coder.</h5>
+                        </div>
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Project accountant.</h5>
+                        </div>
+                        <div class="border-tc border-bc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">BIM coordinator.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

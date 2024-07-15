@@ -96,3 +96,15 @@
         padding-top: 50%;
     }
 }
+
+@media (max-width: 635px) {
+    .forma1 {
+        width: 150%;
+    }
+}
+
+@media (max-width: 475px) {
+    .forma1 {
+        width: 200%;
+    }
+}

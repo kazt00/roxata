@@ -1,9 +1,9 @@
 <section id="aboutus" class="mb-5 bg-white" style="margin-top: 5%;">
     <div class="container">
         <div class="row w-100">
-            <div class="col-lg-6 col-md-12 position-relative d-flex flex-column ">
+            <div id="menuContainer" class="col-lg-6 col-md-12 position-relative d-flex flex-column">
                 <div class="menu-shape" style="z-index: 0;"></div>
-                <a class="navbar-brand" routerLink="/" style="width: fit-content;">
+                <a class="navbar-brand" routerLink="/" (click)="goToHome()" style="width: fit-content;">
                     <img src="assets/roxata1.png" alt="Logo" height="50">
                 </a>
                 <div class="menu-nav p-3" style="z-index: 1;">
@@ -150,3 +150,77 @@
         </div>
     </div>
 </div>
+<section id="contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="row h-100">
+                <div class="col-lg-6 col-md-12 position-relative">
+                    <div class="px-4 pt-5">
+                        <span class="font-regular text-roxata home-menu" style="line-height: 1; z-index: 2;">Contact <br> and
+                            quote
+                            <br> pricing</span>
+                    </div>
+                    <div class="contact-shape"></div>
+                    <div class="contact-shape1"></div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <div class="px-4 w-100 d-flex flex-column justify-content-center">
+                        <div class="border-tc py-2 d-flex flex-row justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <h3 class="text-roxata font-regular">Ricardo Cevallos</h3>
+                                <!-- <h5 class="font-light">Chief Executive Officer</h5> -->
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h5 class="font-light">+593 098 765 4321</h5>
+                                <h5 class="font-light text-roxata">email@roxata.com</h5>
+                            </div>
+                        </div>
+                        <div class="border-tc border-bc py-2 d-flex flex-row justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <h3 class="text-roxata font-regular">Miguel Andrade</h3>
+                                <!-- <h5 class="font-light">Chief Technical Officer</h5> -->
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h5 class="font-light">+593 098 765 4321</h5>
+                                <h5 class="font-light text-roxata">email@roxata.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="career" class="bg-roxata-grey">
+    <div class="container">
+        <div class="py-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 position-relative d-flex align-items-center">
+                    <div class="px-4">
+                        <span class="font-regular text-roxata home-menu">Career</span>
+                    </div>
+                    <div class="career-shape"></div>
+                </div>
+                <div class="col-lg-6 col-md-12 py-4">
+                    <div class="px-4 d-flex flex-column">
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Senior structural steel and miscellaneous metals detailer.</h5>
+                        </div>
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Junior civil project manager.</h5>
+                        </div>
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Senior coder.</h5>
+                        </div>
+                        <div class="border-tc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">Project accountant.</h5>
+                        </div>
+                        <div class="border-tc border-bc d-flex flex-fill align-items-end py-2">
+                            <h5 class="font-light">BIM coordinator.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

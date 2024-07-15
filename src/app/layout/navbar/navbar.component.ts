@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { NavbarRepo } from './repositories/navbar.repo';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,9 +9,9 @@ import { NavbarRepo } from './repositories/navbar.repo';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  constructor(private navbarRepo: NavbarRepo) { }
+  constructor(private navbarRepo: NavbarRepo, private router: Router) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -27,7 +28,10 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  scrollToSection(sectionId: string) {
+  scrollToSection(sectionId: string, home?: boolean) {
+    if (home) {
+      this.router.navigateByUrl('/');
+    }
     this.navbarRepo.scrollToSection(sectionId);
   }
 

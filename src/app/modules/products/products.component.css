@@ -1,0 +1,13 @@
+.career-shape {
+    bottom: 150px;
+}
+
+@media (max-width: 992px) {
+    .contact-shape {
+        bottom: 300px;
+    }
+
+    .contact-shape1 {
+        bottom: 530px;
+    }
+}
