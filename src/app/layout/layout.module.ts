@@ -5,12 +5,14 @@ import { CommonModule } from "@angular/common";
 import { BacktotopComponent } from './backtotop/backtotop.component';
 import { RouterModule } from "@angular/router";
 import { NavbarRepo } from "./navbar/repositories/navbar.repo";
+import { FullScreenModalComponent } from './full-screen-modal/full-screen-modal.component';
 
 @NgModule({
     declarations: [
         NavbarComponent,
         FooterComponent,
-        BacktotopComponent
+        BacktotopComponent,
+        FullScreenModalComponent
     ],
     imports: [
         CommonModule,
@@ -19,7 +21,8 @@ import { NavbarRepo } from "./navbar/repositories/navbar.repo";
     exports: [
         NavbarComponent,
         FooterComponent,
-        BacktotopComponent
+        BacktotopComponent,
+        FullScreenModalComponent
     ],
     providers: [
         NavbarRepo

@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { HomeComponent } from "./home.component";
 import { CommonModule } from "@angular/common";
 import { HomeRouter } from "./home.routing";
+import { LayoutModule } from "src/app/layout/layout.module";
 
 @NgModule({
     declarations: [
@@ -9,7 +10,8 @@ import { HomeRouter } from "./home.routing";
     ],
     imports:[
         CommonModule,
-        HomeRouter
+        HomeRouter,
+        LayoutModule
     ]
 })
 

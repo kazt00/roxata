@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
+import { FullScreenModalComponent } from 'src/app/layout/full-screen-modal/full-screen-modal.component';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
 export class HomeComponent implements AfterViewInit {
 
   @ViewChild('scroll1', { static: true }) scrollContainer: ElementRef | undefined;
+  @ViewChild(FullScreenModalComponent) modal!: FullScreenModalComponent;
   items = [
     'Landscaping',
     'Demolition',
@@ -44,7 +46,7 @@ export class HomeComponent implements AfterViewInit {
     'Integrated automation',
     'Communications',
     'Electronic safety'];
-  
+  selectedProjectId: number = 0;
   private contactShape: HTMLElement | null = null;
   private contactShape1: HTMLElement | null = null;
   private careerShape: HTMLElement | null = null;
@@ -162,5 +164,15 @@ export class HomeComponent implements AfterViewInit {
     if (shape2) {
       shape2.style.transform = `translateY(${scrollPosition * 0.3}px)`;
     }
+  }
+
+  scrollToSection(section: string) {
+    this.navbarRepo.scrollToSection(section);
+  }
+
+  openModal(projectId: number) {
+    this.modal.projectId = projectId;
+    this.modal.loadProject();
+    this.modal.open();
   }
 }

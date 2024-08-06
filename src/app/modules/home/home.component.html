@@ -341,7 +341,7 @@
                                                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                                         </svg>
                                     </div>
-                                    <h5 class="text-roxata">Cost Estimation CLT1</h5>
+                                    <h5 class="text-roxata">Cost Estimation</h5>
                                 </div>
                             </div>
                             <div class="col-4 d-flex align-items-center producto-shape" (click)="goToProducts(3)" style="background-image:url('assets/asset04.jpg');">
@@ -425,7 +425,7 @@
                 </h3>
             </div>
             <div class="row pt-2">
-                <h5 class="text-center"><span class="contactus-button">contact us</span>  for more details.</h5>
+                <h5 class="text-center" (click)="scrollToSection('contact')"><span class="contactus-button">Contact us</span>  for more details.</h5>
             </div>
         </div>
     </div>
@@ -469,9 +469,9 @@
                 <div class="row pt-2 pb-5">
                     <div class="col-lg-6 col-md-12">
                         <div class="px-3 d-flex flex-column">
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(0)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals shop drawings Delray</h5>
+                                    <h5 class="font-light">TIA</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -481,11 +481,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(1)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals shop drawings Berkeley
-                                        Landing
-                                    </h5>
+                                    <h5 class="font-light">100 Business Plaza</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -495,9 +493,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(2)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals shop drawings Moxy</h5>
+                                    <h5 class="font-light">Jardines de la Esperanza </h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -507,11 +505,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(3)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals shop drawings Custom
-                                        Residence
-                                    </h5>
+                                    <h5 class="font-light">Biomar</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -521,9 +517,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container"  (click)="openModal(4)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals shop drawings Conviva</h5>
+                                    <h5 class="font-light">Cardiocorp</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -533,10 +529,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(5)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Shell and Civil take offs monthly subscription for Testing
-                                        Company</h5>
+                                    <h5 class="font-light">Terminal de Ambato</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -546,9 +541,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container"  (click)="openModal(6)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Stucco and painting take offs Aventura Quattro</h5>
+                                    <h5 class="font-light">Fundametz</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -558,9 +553,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container"  (click)="openModal(7)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Civil take offs Aventura Quattro</h5>
+                                    <h5 class="font-light">Mercado Central</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -570,9 +565,57 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container exp-container-end ece">
+                            <div class="exp-container" (click)="openModal(8)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Shell take offs Aventura Quattro</h5>
+                                    <h5 class="font-light">San Miguel</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container" (click)="openModal(9)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Portrans</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container"  (click)="openModal(10)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Cine Village</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container" (click)="openModal(11)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Aerovía</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container exp-container-end exp-container-end-not" (click)="openModal(12)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Puentes Yahuana Alejandría</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -586,10 +629,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 mb-4">
                         <div class="px-3 d-flex flex-column">
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(13)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals take offs Aventura Quattro
-                                    </h5>
+                                    <h5 class="font-light">Puente Gye - Daule</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -599,9 +641,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(14)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Drywall and ceiling take offs Aventura Quattro</h5>
+                                    <h5 class="font-light">Songa</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -611,9 +653,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(15)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Precast objects take offs Unknown Residence</h5>
+                                    <h5 class="font-light">Indurama</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -623,9 +665,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(16)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Drywall and Ceiling take offs Moxy</h5>
+                                    <h5 class="font-light">Omarsa</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -635,9 +677,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(17)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Drywall and Ceiling take offs Hollywood</h5>
+                                    <h5 class="font-light">Berkley Landing</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -647,11 +689,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(18)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Structural Steel and misc. metals scope, take offs, and
-                                        vendor
-                                        supplier material list Home2suits</h5>
+                                    <h5 class="font-light">98 NW 5th Av Renovation</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -661,10 +701,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(19)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Tile and floor take offs and unit cost analysis, Old Cutler
-                                    </h5>
+                                    <h5 class="font-light">Moxy Wynwood</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -674,11 +713,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container">
+                            <div class="exp-container" (click)="openModal(20)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">Architectural and Structural Steel permit drawings, Bodegas
-                                        Costa
-                                        del Este.</h5>
+                                    <h5 class="font-light">Custom Residence</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -688,9 +725,57 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="exp-container exp-container-end">
+                            <div class="exp-container" (click)="openModal(21)">
                                 <div class="ext-content d-flex justify-content-between align-items-center">
-                                    <h5 class="font-light">GC complete proposal, NN Gas Station</h5>
+                                    <h5 class="font-light">The Houston Residence</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container" (click)="openModal(22)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Canvas Office</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container" (click)="openModal(23)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Advanced Cardiovascular Surgery Center</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container" (click)="openModal(24)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Ocean Reef Housing</h5>
+                                    <div class="arrow-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container exp-container-end" (click)="openModal(25)">
+                                <div class="ext-content d-flex justify-content-between align-items-center">
+                                    <h5 class="font-light">Bal Harbour Shops Notch Infill</h5>
                                     <div class="arrow-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -721,25 +806,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 d-flex">
                         <div class="px-4 w-100 d-flex flex-column justify-content-center">
-                            <div class="border-tc py-2 d-flex flex-row justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h3 class="text-roxata font-regular">Ricardo Cevallos</h3>
-                                    <!-- <h5 class="font-light">Chief Executive Officer</h5> -->
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h5 class="font-light">+593 098 765 4321</h5>
-                                    <h5 class="font-light text-roxata">email@roxata.com</h5>
-                                </div>
-                            </div>
-                            <div class="border-tc border-bc py-2 d-flex flex-row justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h3 class="text-roxata font-regular">Miguel Andrade</h3>
-                                    <!-- <h5 class="font-light">Chief Technical Officer</h5> -->
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h5 class="font-light">+593 098 765 4321</h5>
-                                    <h5 class="font-light text-roxata">email@roxata.com</h5>
-                                </div>
+                            <div class="border-tc border-bc py-2 d-flex flex-row justify-content-between align-items-center">
+                                <h3 class="text-roxata font-regular">+593 098 765 4321</h3>
+                                <h5 class="font-light">email@roxata.com</h5>
                             </div>
                         </div>
                     </div>
@@ -781,3 +850,4 @@
         </div>
     </section>
 </div>
+<app-full-screen-modal></app-full-screen-modal>
