@@ -253,7 +253,7 @@ body {
 }
 
 .contact-shape {
-    background-image: url('/assets/asset06.jpg');
+    background-image: url('assets/asset06.jpg');
     background-size: cover;
     width: 100%;
     height: 80%;
