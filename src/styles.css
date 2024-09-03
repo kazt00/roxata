@@ -163,32 +163,20 @@ body {
 }
 
 .custom-accordion-button:hover {
-    background-color: #0129fa;
-    color: white !important;
+    background-color: #E6E7E8;
 }
 
 .custom-accordion-button:not(.collapsed) {
-    background-color: #0129fa !important;
-    color: white !important;
+    background-color: white !important;
 }
 
-.custom-accordion-button:not(.collapsed)::after {
-    filter: invert(1);
-    /* Change arrow color to white */
-}
 
 .accordion-button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #0129fa !important;
-    color: white !important;
-}
-
-.custom-accordion-button:not(.collapsed)::after {
-    color: white !important;
-    /* Change arrow color to white */
+    color: black !important;
 }
 
 /* Override Bootstrap default styles */
@@ -262,11 +250,11 @@ body {
 }
 
 .contact-shape1 {
-    background-color: black;
+    background-color: #E6E7E8;
     width: 100px;
     height: 180px;
     clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
-    bottom: 400px;
+    bottom: 380px;
 }
 
 .career-shape {

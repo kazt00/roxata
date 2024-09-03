@@ -1,8 +1,8 @@
 .producto-shape {
-    padding-bottom: 50px;
+    padding-bottom: 120px;
     width: 33%;
     height: 300px;
-    clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
+    clip-path: polygon(0 60%, 0 0, 100% 40%, 100% 100%);
     background-size: cover;
 }
 
@@ -114,6 +114,7 @@
 }
 
 .arrow-icon {
+    color:#0129fa;
     width: 16px;
     height: 16px;
     display: flex;
@@ -122,7 +123,11 @@
 
 .exp-container:hover {
     background: white;
-    color: #0129fa;
+    color: black;
+}
+
+.exp-container:hover .arrow-icon svg {
+    color: black;
 }
 
 .left-half-fixed {
@@ -154,7 +159,7 @@
     width: 150%;
     height: 1200px;
     clip-path: polygon(100% 40%, 100% 100%, 0 60%, 0 0);
-    bottom: 50px;
+    bottom: 20px;
     z-index: -1;
 }
 
@@ -174,15 +179,15 @@
     width: 100px;
     height: 180px;
     clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
-    bottom: 960px;
+    bottom: 850px;
 }
 
 .shape2 {
-    background-color: #0129fa;
+    background-color: #E6E7E8;
     width: 200px;
     height: 300px;
     clip-path: polygon(100% 0%, -40% 70%, 0% 100%, 140% 30%);
-    bottom: 660px;
+    bottom: 550px;
 }
 
 .contact-shape {
@@ -190,7 +195,7 @@
 }
 
 .contact-shape1 {
-    bottom: 650px;
+    bottom: 640px;
 }
 
 .career-shape {
@@ -199,15 +204,15 @@
 
 @media (max-width: 1400px) {
     .img-shape1 {
-        bottom: 15px;
+        top: 400px;
     }
 
     .shape1 {
-        bottom: 895px;
+        bottom: 780px;
     }
 
     .shape2 {
-        bottom: 590px;
+        bottom: 480px;
     }
 }
 
@@ -222,15 +227,15 @@
     }
 
     .shape1 {
-        bottom: 960px;
+        bottom: 780;
     }
 
     .shape2 {
-        bottom: 655px;
+        bottom: 680;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     .space1 {
         padding-bottom: 100% !important;

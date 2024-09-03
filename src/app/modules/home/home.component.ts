@@ -13,48 +13,35 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('scroll1', { static: true }) scrollContainer: ElementRef | undefined;
   @ViewChild(FullScreenModalComponent) modal!: FullScreenModalComponent;
   items = [
-    'Landscaping',
     'Demolition',
     'Civil',
-    'Earthwork',
-    'Utilities',
-    'Safety',
-    'Concrete',
-    'Masonry',
-    'Foundations',
-    'Structural steel and miscellaneous metals',
-    'Drywall and ceiling',
-    'Painting and stucco',
+    'Shell',
+    'Structural steel',
+    'Miscellaneous metals',
+    'Drywall',
+    'Painting',
+    'Stucco',
     'Waterproofing',
-    'Thermal and moisture protection',
     'Roofing',
     'Mechanical',
     'Electrical',
     'Plumbing',
-    'Interior design',
-    'Wood and plastics',
-    'Public works',
-    'Vanity',
-    'Tile and covers',
-    'Windows and doors',
-    'Openings',
-    'Lighting and fixtures',
-    'Structural Wood',
-    'Precast objects',
-    'Pavers',
-    'Conveying equipment',
-    'Integrated automation',
-    'Communications',
-    'Electronic safety'];
+    'Fire Control',
+    'Millwork',
+    'Tile and finishes',
+    'Windows',
+    'Doors',
+    'Precast',
+    'Pavers'];
   selectedProjectId: number = 0;
   private contactShape: HTMLElement | null = null;
   private contactShape1: HTMLElement | null = null;
   private careerShape: HTMLElement | null = null;
   private activeElements: Set<HTMLElement> = new Set();
 
-  constructor( 
+  constructor(
     private navbarRepo: NavbarRepo,
-    private router: Router){
+    private router: Router) {
     this.navbarRepo.activateScrollListener();
     this.navbarRepo.showNavbarFull();
   }

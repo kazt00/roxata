@@ -11,3 +11,12 @@
     z-index: 1055; /* Ensures the close button is above other elements */
   }
   
+  .btn-close-large {
+    width: 30;
+    height: 30;
+    background-size: 35px;
+  }
+  
+  .btn-close-large::before {
+    font-size: 35px;
+  }

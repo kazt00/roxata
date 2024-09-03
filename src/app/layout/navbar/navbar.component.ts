@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { NavbarRepo } from './repositories/navbar.repo';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 
 @Component({
@@ -9,9 +9,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  showMenuCareer: boolean = true;
   constructor(private navbarRepo: NavbarRepo, private router: Router) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.checkRoute(event.urlAfterRedirects);
+      }
+    });
+  }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -46,5 +53,16 @@ export class NavbarComponent implements OnInit {
 
   scrollToTop() {
     this.navbarRepo.scrollToTop();
+  }
+
+  checkRoute(url: string): void {
+    const targetRoute = '/about-us';
+
+    // Si la ruta es la específica, ocultamos el elemento
+    if (url === targetRoute) {
+      this.showMenuCareer = false;
+    } else {
+      this.showMenuCareer = true;
+    }
   }
 }
