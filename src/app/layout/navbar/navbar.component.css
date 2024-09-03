@@ -3,7 +3,7 @@
 }
 
 .navbar-full {
-    background: url('/assets/navbar.jpg') no-repeat center;
+    background: url('../../../assets/navbar.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
     animation-duration: 0.5s;
