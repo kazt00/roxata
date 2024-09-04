@@ -159,7 +159,7 @@
     width: 150%;
     height: 1200px;
     clip-path: polygon(100% 40%, 100% 100%, 0 60%, 0 0);
-    bottom: 20px;
+    top: 290px;
     z-index: -1;
 }
 

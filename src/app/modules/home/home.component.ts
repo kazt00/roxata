@@ -48,7 +48,6 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initScroll();
-    this.setPosition();
     this.contactShape = document.querySelector('.contact-shape');
     this.contactShape1 = document.querySelector('.contact-shape1');
     this.careerShape = document.querySelector('.career-shape');
@@ -114,16 +113,6 @@ export class HomeComponent implements AfterViewInit {
     const container = this.scrollContainer?.nativeElement;
     const scrollHeight = container.scrollHeight / 2;
     container.scrollTop = scrollHeight / 1; // Inicializa el scroll en el centro
-  }
-
-  setPosition() {
-    const startPoint = document.getElementById('start-point-1');
-    const fixedElement = document.getElementById('fixed-element-1');
-
-    if (startPoint && fixedElement) {
-      const startPointPosition = startPoint.getBoundingClientRect().top + window.scrollY;
-      fixedElement.style.top = `${startPointPosition}px`;
-    }
   }
 
   goToProducts(product: number) {

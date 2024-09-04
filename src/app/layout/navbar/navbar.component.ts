@@ -18,6 +18,23 @@ export class NavbarComponent implements OnInit {
         this.checkRoute(event.urlAfterRedirects);
       }
     });
+    this.onRouteChange((url: string) => {
+      if (url.includes('/home')) {
+        const navbar = document.getElementById('mainNavbar');
+        if(navbar) {
+          this.navbarRepo.showMainNavBar();
+          this.navbarRepo.activateScrollListener();
+        }
+      }
+    });
+  }
+
+  onRouteChange(callback: (url: string) => void): void {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        callback(event.urlAfterRedirects); // Ejecuta el callback con la nueva URL
+      }
+    });
   }
 
   @HostListener('window:scroll', ['$event'])
