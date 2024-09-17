@@ -64,6 +64,15 @@ export class AboutUsComponent implements AfterViewInit {
 
   handleIntersect(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
     entries.forEach(entry => {
+      const targetElement = entry.target as HTMLElement;
+      if (targetElement.classList.contains('menu-nav')) {
+        if (!entry.isIntersecting) {
+          this.navbarRepo.hideNavbarFull();
+          this.navbarRepo.showMainNavBar();
+        } else {
+          this.navbarRepo.hideMainNavBar();
+        }
+      }
       if (entry.isIntersecting) {
         this.activeElements.add(entry.target as HTMLElement);
       } else {
