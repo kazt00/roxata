@@ -3,37 +3,41 @@
         <div class="row w-100">
             <div id="menuContainer" class="col-lg-6 col-md-12 position-relative d-flex flex-column">
                 <div class="menu-shape" style="z-index: 0;"></div>
-                <a class="navbar-brand" routerLink="/" (click)="goToHome()" style="width: fit-content;">
-                    <img src="assets/roxata1.png" alt="Logo" height="50">
+                <a class="navbar-brand" routerLink="/" (click)="goToHome('content')" style="width: fit-content;">
+                    <img src="assets/roxata1.png" alt="Logo" height="60">
                 </a>
                 <div class="menu-nav p-3" style="z-index: 1;">
                     <span class="font-regular home-menu text-white ml-3">About us</span> 
                     <ul class="navbar-nav" style="width: fit-content;">
                         <li class="nav-item">
                             <a class="nav-link text-white font-weight-bold py-0"
-                            style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
-                            routerLink="/" (click)="goToHome()">HOME</a>
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" routerLink="/" (click)="goToHome()">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white font-weight-bold py-0" style="margin-top: 5px; margin-bottom: 5px"
+                                routerLink="/about-us" routerLinkActive="active">ABOUT US</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white font-weight-bold py-0"
-                            style="margin-top: 5px; margin-bottom: 5px" routerLink="/about-us"
-                            routerLinkActive="active">ABOUT US</a>
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('services')">SERVICES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white font-weight-bold py-0"
-                            style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('services')">SERVICES</a>
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('trades')">TRADES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white font-weight-bold py-0"
-                            style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('trades')">TRADES</a>
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
+                                (click)="goToHome('experience')">EXPERIENCE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white font-weight-bold py-0"
-                            style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('experience')">EXPERIENCE</a>
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('contact')">CONTACT
+                                AND QUOTE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white font-weight-bold py-0"
-                            style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
+                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('career')">CAREER</a>
                         </li>
                     </ul>
                 </div>
@@ -139,7 +143,7 @@
                     <div class="px-4 w-100 d-flex flex-column justify-content-center">
                         <div class="border-tc border-bc py-2 d-flex flex-row justify-content-between align-items-center">
                             <h3 class="text-roxata font-regular">+593 098 765 4321</h3>
-                            <h5 class="font-light">email@roxata.com</h5>
+                            <h5 class="font-light">email&#64;roxata.com</h5>
                         </div>
                     </div>
                 </div>

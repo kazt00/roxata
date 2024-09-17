@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, HostListener } from '@angular/core';
+import { AfterViewInit, Component, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
 
@@ -7,10 +7,11 @@ import { NavbarRepo } from 'src/app/layout/navbar/repositories/navbar.repo';
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css']
 })
-export class AboutUsComponent implements AfterViewInit{
+export class AboutUsComponent implements AfterViewInit {
   private contactShape: HTMLElement | null = null;
   private contactShape1: HTMLElement | null = null;
   private careerShape: HTMLElement | null = null;
+  private menuNav: HTMLElement | null = null;
   private activeElements: Set<HTMLElement> = new Set();
 
   constructor(
@@ -26,12 +27,15 @@ export class AboutUsComponent implements AfterViewInit{
     this.contactShape = document.querySelector('.contact-shape');
     this.contactShape1 = document.querySelector('.contact-shape1');
     this.careerShape = document.querySelector('.career-shape');
+    this.menuNav = document.querySelector('.menu-nav');
     if(this.contactShape)
       this.initIntersectionObserver(this.contactShape);
     if(this.contactShape1)
       this.initIntersectionObserver(this.contactShape1);
     if(this.careerShape)
       this.initIntersectionObserver(this.careerShape);
+    if(this.menuNav)
+      this.initIntersectionObserver(this.menuNav);
   }
 
   goToHome(section?: string) {

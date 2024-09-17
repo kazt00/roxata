@@ -55,7 +55,7 @@ export class NavbarRepo {
 
     showMainNavBar() {
         const mainNavbar = document.getElementById('mainNavbar');
-        if ( mainNavbar) {
+        if (mainNavbar) {
             mainNavbar.classList.remove('d-none')
         }
     }

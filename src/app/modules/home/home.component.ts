@@ -13,6 +13,7 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('scroll1', { static: true }) scrollContainer: ElementRef | undefined;
   @ViewChild(FullScreenModalComponent) modal!: FullScreenModalComponent;
   items = [
+    '...',
     'Demolition',
     'Civil',
     'Shell',
@@ -32,7 +33,9 @@ export class HomeComponent implements AfterViewInit {
     'Windows',
     'Doors',
     'Precast',
-    'Pavers'];
+    'Pavers',
+    '...'
+  ];
   selectedProjectId: number = 0;
   private contactShape: HTMLElement | null = null;
   private contactShape1: HTMLElement | null = null;
@@ -115,8 +118,12 @@ export class HomeComponent implements AfterViewInit {
     container.scrollTop = scrollHeight / 1; // Inicializa el scroll en el centro
   }
 
-  goToProducts(product: number) {
-    this.router.navigate(['/products', product]);
+  goToProducts(product?: number) {
+    if (product) {
+      this.router.navigate(['/products', product]);
+    } else {
+      this.router.navigate(['/products']);
+    }
   }
 
   applyParallaxEffect() {

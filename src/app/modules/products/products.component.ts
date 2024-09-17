@@ -37,8 +37,13 @@ export class ProductsComponent implements AfterViewInit{
     if(this.careerShape)
       this.initIntersectionObserver(this.careerShape);
     this.activateRoute.paramMap.subscribe(params => {
-      this.section = +(params.get('id') || 0);
-      this.scrollToProduct(this.section);
+      const idParam = params.get('id');
+      if (idParam !== null) {
+        this.section = +idParam;
+        this.scrollToProduct(this.section);
+      } else {
+        this.section = 0;
+      }
     });
   }
 
