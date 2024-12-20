@@ -4,6 +4,11 @@
     height: 300px;
     clip-path: polygon(0 60%, 0 0, 100% 40%, 100% 100%);
     background-size: cover;
+    flex-wrap: nowrap;
+}
+
+.producto-shape .text-bold {
+    white-space: nowrap; 
 }
 
 .cardpay:hover,
@@ -344,6 +349,35 @@
     .img-shape1 {
         height: 600px;
         top: 580px;
+    }
+
+    .exp-container {
+        width: 100%;
+    }
+
+    .producto-shape {
+        clip-path: none;
+        height: 150px;
+        padding-bottom: none;
+        padding: 40px;
+    }
+
+    .producto-shape h5 {
+        font-size: 16px;
+    }
+
+    .col-4 {
+        width: 100%;
+        display: block;
+    }
+
+    .d-flex {
+        display: block;
+    }
+
+    .d-flex.flex-column {
+        width: 100%;
+        align-items: center;
     }
 }
 

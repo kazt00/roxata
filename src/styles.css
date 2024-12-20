@@ -297,3 +297,20 @@ body {
         height: 200px;
     }
 }
+
+@media (max-width: 576px) {
+    .border-rc {
+        border-right: none;
+    }
+    
+}
+
+@media (max-width: 464px) {
+    .home-menu {
+        font-size: 50px;
+    }
+    
+    .accordion-button {
+        font-size: 1.75rem !important;
+    }
+}
