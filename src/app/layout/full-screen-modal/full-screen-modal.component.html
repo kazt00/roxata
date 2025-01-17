@@ -48,7 +48,15 @@
         <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
         
         <div class="d-flex justify-content-center align-items-center h-100">
-          <img [src]="currentImage" class="img-fluid" alt="Imagen ampliada">
+          <button class="btn btn-light position-absolute start-0 top-50 translate-middle-y ms-3" (click)="prevImage()" style="z-index: 10;">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <img [src]="currentImage" class="img-fluid" alt="Imagen ampliada" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+          
+          <button class="btn btn-light position-absolute end-0 top-50 translate-middle-y me-3" (click)="nextImage()" style="z-index: 10;">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </div>

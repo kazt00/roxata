@@ -45,6 +45,7 @@ export class FullScreenModalComponent implements OnInit {
 
   project: Project | undefined;
   currentImage: string | undefined;
+  currentIndex: number = 0;
 
   ngOnInit(): void {
     this.loadProject();
@@ -63,11 +64,26 @@ export class FullScreenModalComponent implements OnInit {
   }
 
   openImageViewer(index: number): void {
-    this.currentImage = this.project?.imagenes[index];
+    this.currentIndex = index;
+    this.currentImage = this.project?.imagenes[this.currentIndex];
     const modalElement = document.getElementById('imageViewer');
     if (modalElement) {
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
+    }
+  }
+
+  nextImage(): void {
+    if (this.project) {
+      this.currentIndex = (this.currentIndex + 1) % this.project.imagenes.length;
+      this.currentImage = this.project.imagenes[this.currentIndex];
+    }
+  }
+
+  prevImage(): void {
+    if (this.project) {
+      this.currentIndex = (this.currentIndex - 1 + this.project.imagenes.length) % this.project.imagenes.length;
+      this.currentImage = this.project.imagenes[this.currentIndex];
     }
   }
 }
