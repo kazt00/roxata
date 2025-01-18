@@ -26,13 +26,13 @@ export class NavbarRepo {
         const navbar = document.getElementById('mainNavbar');
         const navbarFull = document.getElementById('navbarFull');
         const navbarMin = document.getElementById('navbarMin');
-        if (navbar && navbarMin && navbarFull) {
+        if (navbar && navbarMin && navbarFull && !navbarFull.classList.contains('d-none')) {
             navbar.classList.add('shrink');
             navbar.addEventListener('animationend', () => {
                 navbar.classList.remove('shrink');
                 navbarMin.classList.remove('d-none');
                 navbarFull.classList.add('d-none');
-            }, { once: true });
+            }, { once: false });
         }
         if (this.firstLoad) {
             this.firstLoad = false;
@@ -43,13 +43,13 @@ export class NavbarRepo {
         const navbar = document.getElementById('mainNavbar');
         const navbarFull = document.getElementById('navbarFull');
         const navbarMin = document.getElementById('navbarMin');
-        if (navbar && navbarMin && navbarFull) {
-            navbarFull.classList.add('slide-in');
-                navbar.addEventListener('animationend', () => {
-                    navbar.classList.remove('shrink');
-                    navbarFull.classList.remove('d-none');
-                    navbarMin.classList.add('d-none');
-                })
+        if (navbar && navbarMin && navbarFull && navbarFull.classList.contains('d-none')) {
+            navbarMin.classList.add('d-none');
+            navbar.classList.remove('shrink');
+            setTimeout(() => {
+                navbarFull.classList.remove('d-none');
+                navbarFull.classList.add('fade-in');
+            }, 300)
         }
     }
 
