@@ -375,9 +375,9 @@
         display: block;
     }
 
-    .d-flex.flex-column {
-        width: 100%;
-        align-items: center;
+    .contact-info {
+        flex-direction: column !important;
+        align-items: start !important;
     }
 }
 
