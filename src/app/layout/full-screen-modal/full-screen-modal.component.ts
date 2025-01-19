@@ -41,6 +41,7 @@ export class FullScreenModalComponent implements OnInit {
     { project: 'Advanced Cardiovascular Surgery Center', company: 'Roxata', description: 'Medical facility.', involvement: 'Miscellaneous metals and structural steel shop drawings.', imagenes: ['assets/experience/24_Advanced_Cardiovascular/01.png'] },
     { project: 'Ocean Reef Housing', company: 'Roxata', description: '10-floor hotel building.', involvement: 'Waterproofing estimate.', imagenes: ['assets/experience/25_Ocean_Reef_Housing/01.png'] },
     { project: 'Bal Harbour Shops Notch Infill', company: 'Roxata', description: '6-floor parking garage building.', involvement: 'Waterproofing estimate.', imagenes: ['assets/experience/26_Bal_Harbour_Notch/01.png', 'assets/experience/26_Bal_Harbour_Notch/02.png'] },
+    { project: 'DPW Logistcal Center', company: 'Geoforce', description: '200-ton logistics warehouse.', involvement: 'Staff experience as project manager.', imagenes: ['assets/experience/27_DPW/01.jpg', 'assets/experience/27_DPW/02.jpg', 'assets/experience/27_DPW/03.jpg', 'assets/experience/27_DPW/04.jpg', 'assets/experience/27_DPW/05.jpg'] },
   ];
 
   project: Project | undefined;
