@@ -45,7 +45,6 @@ export class NavbarComponent implements OnInit {
   }
 
   checkScrollPosition() {
-    console.log(window.scrollY)
     if (window.scrollY === 0) {
       this.navbarRepo.showNavbarFull();
     } else {

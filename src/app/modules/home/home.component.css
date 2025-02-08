@@ -208,6 +208,10 @@
 }
 
 @media (max-width: 1400px) {
+    .content{
+        margin-top: 2%;
+    }
+
     .img-shape1 {
         top: 400px;
     }
@@ -222,6 +226,9 @@
 }
 
 @media (max-width: 1200px) {
+    .content{
+        margin-top: 5%;
+    }
 
     .img-shape1 {
         bottom: 45px;
@@ -241,6 +248,9 @@
 }
 
 @media (max-width: 991px) {
+    .content{
+        margin-top: 10%;
+    }
 
     .space1 {
         padding-bottom: 100% !important;
@@ -293,6 +303,10 @@
 }
 
 @media (max-width:768px) {
+    .content{
+        margin-top: 15%;
+    }
+
     .img-shape1 {
         top: 500px;
     }
@@ -311,6 +325,10 @@
 }
 
 @media (max-width: 576px) {
+    .content{
+        margin-top: 20%;
+    }
+
     .fila-out {
         padding: 0 !important;
         border-top: 0 !important;
@@ -346,6 +364,10 @@
 }
 
 @media (max-width: 455px) {
+    .content{
+        margin-top: 35%;
+    }
+
     .img-shape1 {
         height: 600px;
         top: 580px;
