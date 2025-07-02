@@ -2,47 +2,10 @@
     <div class="container">
         <div class="row w-100">
             <div id="menuContainer" class="col-lg-6 col-md-12 position-relative d-flex flex-column ">
-                <div class="menu-shape" style="z-index: 0;"></div>
-                <a class="navbar-brand" routerLink="/" (click)="goToHome('content')" style="width: fit-content;">
-                    <img src="assets/roxata1.png" alt="Logo" height="60">
-                </a>
-                <div class="menu-nav p-3" style="z-index: 1;">
-                    <span class="font-regular home-menu text-white ml-3">Services</span>
-                    <ul class="navbar-nav" style="width: fit-content;">
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" routerLink="/"
-                                (click)="goToHome('content')">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0" style="margin-top: 5px; margin-bottom: 5px"
-                                routerLink="/about-us" routerLinkActive="active">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
-                                (click)="goToHome('services')">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('trades')">TRADES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
-                                (click)="goToHome('experience')">EXPERIENCE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
-                                (click)="scrollToSection('contact')">CONTACT AND QUOTE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('career')">CAREER</a>
-                        </li>
-                    </ul>
-                </div>
+                <app-navbar-two 
+                    menuTitle="Services"
+                    context="products">
+                </app-navbar-two>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="p-3">
@@ -310,7 +273,7 @@
                                     data-bs-parent="#servicesAccordion3">
                                     <div class="accordion-body px-0">
                                         <h5 class="font-light">
-                                            Today’s world relies on IT and the construction Industry is no exception. We use modeling software tools to create
+                                            Today's world relies on IT and the construction Industry is no exception. We use modeling software tools to create
                                             virtual models of projects and use the information that arose from them to facilitate the real-life construction
                                             process.
                                         </h5>

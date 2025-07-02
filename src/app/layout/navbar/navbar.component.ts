@@ -13,11 +13,6 @@ export class NavbarComponent implements OnInit {
   constructor(private navbarRepo: NavbarRepo, private router: Router) { }
 
   ngOnInit(): void {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.checkRoute(event.urlAfterRedirects);
-      }
-    });
     this.onRouteChange((url: string) => {
       if (url.includes('/home')) {
         const navbar = document.getElementById('mainNavbar');
@@ -32,7 +27,7 @@ export class NavbarComponent implements OnInit {
   onRouteChange(callback: (url: string) => void): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        callback(event.urlAfterRedirects); // Ejecuta el callback con la nueva URL
+        callback(event.urlAfterRedirects);
       }
     });
   }
@@ -45,41 +40,67 @@ export class NavbarComponent implements OnInit {
   }
 
   checkScrollPosition() {
-    if (window.scrollY === 0) {
-      this.navbarRepo.showNavbarFull();
-    } else {
+    const currentRoute = this.router.url;
+    const isSpecialRoute = currentRoute.includes('/about-us') || currentRoute.includes('/products');
+    const isMobileView = window.innerWidth <= 991;
+
+    // Comportamiento para móvil en rutas especiales
+    if (isSpecialRoute && isMobileView) {
+      if (window.scrollY === 0) {
+        this.navbarRepo.showNavbarFull();
+      } else {
+        this.navbarRepo.hideNavbarFull();
+      }
+      return;
+    } else if (isSpecialRoute && !isMobileView) {
       this.navbarRepo.hideNavbarFull();
+      return;
+    }
+    // Lógica original para otras rutas
+    if (!isSpecialRoute) {
+      if (window.scrollY === 0) {
+        this.navbarRepo.showNavbarFull();
+      } else {
+        this.navbarRepo.hideNavbarFull();
+      }
     }
   }
 
-  scrollToSection(sectionId: string, home?: boolean) {
-    if (home) {
-      this.router.navigateByUrl('/');
+  scrollToSection(sectionId: string): void {
+    const currentRoute = this.router.url;
+    const isHome = currentRoute === '/' || currentRoute.includes('/home');
+    const isAboutUs = currentRoute.includes('/about-us');
+
+    // Caso especial 1: 'aboutus' cuando ya estamos en /about-us
+    if (isAboutUs && sectionId === 'aboutus') {
+      this.navbarRepo.scrollToSection('aboutus');
+      return;
     }
-    this.navbarRepo.scrollToSection(sectionId);
+
+    // Caso especial 2: 'contact' en cualquier ruta
+    if (sectionId === 'contact') {
+      this.navbarRepo.scrollToSection(sectionId);
+      return;
+    }
+
+    // Caso general: redirigir a home si no estamos allí
+    if (!isHome) {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          this.navbarRepo.scrollToSection(sectionId);
+        }, 100);
+      });
+    } else {
+      this.navbarRepo.scrollToSection(sectionId);
+    }
   }
 
   hideNavbarFull() {
     this.navbarRepo.hideNavbarFull()
   }
 
-  goToAboutUs() {
-    this.navbarRepo.hideMainNavBar();
-    this.navbarRepo.deactivateScrollListener();
-  }
-
   scrollToTop() {
     this.navbarRepo.scrollToTop();
   }
 
-  checkRoute(url: string): void {
-    const targetRoute = '/about-us';
-
-    // Si la ruta es la específica, ocultamos el elemento
-    if (url === targetRoute) {
-      this.showMenuCareer = false;
-    } else {
-      this.showMenuCareer = true;
-    }
-  }
 }

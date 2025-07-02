@@ -106,7 +106,7 @@ export class ProductsComponent implements AfterViewInit{
       let speed = 0;
 
       if (element.classList.contains('contact-shape')) {
-        speed = 0.09;
+        speed = 0.20;
       } else if (element.classList.contains('contact-shape1')) {
         speed = 0.08;
       } else if (element.classList.contains('career-shape')) {

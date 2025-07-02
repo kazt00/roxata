@@ -22,6 +22,7 @@
 
 .navbar-full .container-fluid {
     height: 100%;
+    z-index: 3;
 }
 
 .navbar-full .navbar-nav {
@@ -44,11 +45,11 @@
 }
 
 .rox-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: #0129fa;
 }
 
 .rox-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230129fa' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .rox-toggler:focus,
@@ -59,12 +60,76 @@
     /* Borde blanco */
 }
 
+.navbar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+/* Hacer que los elementos hijos tengan ancho de contenido */
+.navbar-content .navbar-brand {
+    width: fit-content;
+}
+
+.navbar-content .navbar-nav {
+    width: fit-content;
+    flex-direction: column;
+}
+
+.navbar-content .nav-item {
+    width: fit-content;
+}
+
+.navbar-content .nav-link {
+    width: fit-content;
+    white-space: nowrap;
+}
+
+/* También aplicar al navbar mínimo */
+#navbarMin .navbar-brand {
+    width: fit-content;
+}
+
+#navbarMin .navbar-nav {
+    width: fit-content;
+}
+
+.navbar-logo {
+    height: 100px;
+    width: auto;
+}
+
+.navbar-logo-min {
+    height: 50px;
+    width: auto;
+    margin-left: 5%;
+}
+
+.navbar-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    padding-right: 5%;
+}
+
+.social-buttons {
+    margin-bottom: 1rem;
+    position: absolute;
+    z-index: 3;
+}
+
 .forma1 {
     position: absolute;
-    background-color: #0129fa;
+    background-color: #ffffff;
     width: 75%;
     height: 100%;
     clip-path: polygon(0 90%, 0% -10%, 100% 100%, 10% 100%);
+    z-index: 2;
 }
 
 .forma2 {
@@ -74,37 +139,27 @@
     left: 0;
     height: 50%;
     clip-path: polygon(100% 20%, 20% 100%, 100% 100%);
+    z-index: 2;
 }
 
+/* Responsividad */
 @media (max-width: 992px) {
-    .forma1 {
-        width: 100%;
-    }
-
-    .forma2 {
-        height: 150%;
-        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-    }
-
-    .navbar-full .container-fluid {
-        padding-top: 25%;
-    }
+    .forma1 { width: 100%; }
+    .forma2 { height: 150%; clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
+    .navbar-full .container-fluid { padding-top: 25%; }
+    .navbar-content { padding-top: 20%; }
 }
+
 
 @media (max-width: 768px) {
-    .navbar-full .container-fluid {
-        padding-top: 50%;
-    }
+    .navbar-full .container-fluid { padding-top: 50%; }
+    .forma2 { height: 350%;}
 }
 
 @media (max-width: 635px) {
-    .forma1 {
-        width: 150%;
-    }
+    .forma1 { width: 150%; }
 }
 
 @media (max-width: 475px) {
-    .forma1 {
-        width: 200%;
-    }
+    .forma1 { width: 200%; }
 }

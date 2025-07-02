@@ -79,12 +79,21 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    background-color: white;
-    color: #0129fa !important;
+    background-color: #0129fa;
+    color: white !important;
+    cursor: pointer;
+}
+
+.nav-link-2:hover,
+.nav-link-2.active {
+    background-color: #0129fa;
+    color: white !important;
+    cursor: pointer;
 }
 
 .nav-link {
     transition: background-color 0.3s, color 0.3s;
+    padding-left: 5%;
 }
 
 .font-light {
@@ -120,14 +129,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0129fa;
+    background-color: white;
     z-index: 1000;
     transition: all 0.5s;
 }
 
 .content {
     margin-top: 0;
-    /* Ensure the content starts below the full screen navbar */
 }
 
 .lh-min {
@@ -170,7 +178,6 @@ body {
     background-color: white !important;
 }
 
-
 .accordion-button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -179,7 +186,6 @@ body {
     color: black !important;
 }
 
-/* Override Bootstrap default styles */
 .accordion-item {
     border: none !important;
 }
@@ -193,7 +199,6 @@ body {
     box-shadow: none !important;
 }
 
-/* Animación para aparecer desde arriba */
 @keyframes slideInFromTop {
     0% {
         transform: translateY(-100%);
@@ -206,7 +211,6 @@ body {
     }
 }
 
-/* Animación para desaparecer hacia arriba */
 @keyframes slideOutToTop {
     0% {
         transform: translateY(0);
@@ -219,7 +223,6 @@ body {
     }
 }
 
-/* Clases para aplicar las animaciones */
 .slide-in {
     animation: slideInFromTop 0.5s forwards;
 }
@@ -237,7 +240,7 @@ body {
 .career-shape {
     position: absolute;
     right: 0;
-    transition: transform 0.1s linear; /* Añade una transición suave */
+    transition: transform 0.1s linear;
 }
 
 .contact-shape {
@@ -245,7 +248,7 @@ body {
     background-size: cover;
     width: 100%;
     height: 80%;
-    bottom: 225px;
+    bottom: 300px;
     clip-path: polygon(100% 0, 30% 100%, 100% 100%);
 }
 
@@ -254,7 +257,7 @@ body {
     width: 100px;
     height: 180px;
     clip-path: polygon(100% 100%, -40% 30%, 0% 0%, 140% 70%);
-    bottom: 380px;
+    bottom: 450px;
 }
 
 .career-shape {

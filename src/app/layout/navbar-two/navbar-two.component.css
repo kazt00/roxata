@@ -1,0 +1,33 @@
+.menu-nav .navbar-nav {
+    width: fit-content;
+}
+
+.menu-nav .nav-link {
+    color: white !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    padding-left: 5%;
+}
+
+.menu-nav .nav-link:hover,
+.menu-nav .nav-link.active {
+    background-color: white !important;
+    color: #0129fa !important;
+}
+
+#aboutus .menu-nav .nav-link {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+
+@media (max-width: 991px) {
+  .d-none-responsive {
+    display: none !important;
+  }
+}

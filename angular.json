@@ -16,7 +16,6 @@
             "outputPath": "dist/roxata",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/roxata/",
             "polyfills": [
               "zone.js"
             ],

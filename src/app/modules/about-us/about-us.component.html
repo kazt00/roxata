@@ -2,45 +2,10 @@
     <div class="container">
         <div class="row w-100">
             <div id="menuContainer" class="col-lg-6 col-md-12 position-relative d-flex flex-column">
-                <div class="menu-shape" style="z-index: 0;"></div>
-                <a class="navbar-brand" routerLink="/" (click)="goToHome('content')" style="width: fit-content;">
-                    <img src="assets/roxata1.png" alt="Logo" height="60">
-                </a>
-                <div class="menu-nav p-3" style="z-index: 1;">
-                    <span class="font-regular home-menu text-white ml-3">About us</span> 
-                    <ul class="navbar-nav" style="width: fit-content;">
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" routerLink="/" (click)="goToHome()">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0" style="margin-top: 5px; margin-bottom: 5px"
-                                routerLink="/about-us" routerLinkActive="active">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('services')">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('trades')">TRADES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;"
-                                (click)="goToHome('experience')">EXPERIENCE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="scrollToSection('contact')">CONTACT
-                                AND QUOTE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold py-0"
-                                style="margin-top: 5px; margin-bottom: 5px; cursor: pointer;" (click)="goToHome('career')">CAREER</a>
-                        </li>
-                    </ul>
-                </div>
+                <app-navbar-two 
+                    menuTitle="About us"
+                    context="about">
+                </app-navbar-two>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="p-3">
@@ -111,23 +76,24 @@
         </div>
     </div>
 </section>
-<div class="bg-roxata-grey py-5 mb-5">
-    <div class="container py-3">
+<div class="bg-roxata-grey py-5">
+    <div class="container">
         <div class="row">
             <h5 class="text-center">Ethic disclosure</h5>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-md-9 col-sm-12">
-            <h3 class="text-roxata font-regular text-center">
-                We refrain from providing services to any
-                prospective client should we detect that there might 
-                be a conflict of interest between two or more of our
-                clients in the services involved at the moment.
-            </h3>
+                <h3 class="text-roxata font-regular text-center">
+                    We refrain from providing services to any
+                    prospective client should we detect that there might
+                    be a conflict of interest between two or more of our
+                    clients in the services involved at the moment.
+                </h3>
+            </div>
         </div>
     </div>
 </div>
-<section id="contact">
+<section id="contact" class="bg-white">
     <div class="container">
         <div class="contact-container">
             <div class="row h-100">

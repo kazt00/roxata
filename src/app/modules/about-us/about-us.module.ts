@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AboutUsComponent } from "./about-us.component";
 import { AboutRouter } from "./about-us.routing";
+import { LayoutModule } from "src/app/layout/layout.module";
 
 @NgModule({
     declarations: [
@@ -9,6 +10,7 @@ import { AboutRouter } from "./about-us.routing";
     ],
     imports:[
         CommonModule,
+        LayoutModule,
         AboutRouter
     ]
 })
